@@ -16,7 +16,7 @@ body {
   header {
     background-color: #6a0572;
     color: #fff;
-    padding: 1rem;
+    padding: 1rem 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
@@ -25,19 +25,22 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2rem;
   }
   
   header nav ul li a {
     color: #fff;
     padding: 0.5rem 1rem;
     transition: background-color 0.3s, transform 0.3s;
+    border: 2px solid transparent;
+    border-radius: 8px;
   }
   
   header nav ul li a:hover {
     background-color: #48034a;
-    border-radius: 5px;
-    transform: scale(1.1);
+    border: 2px solid #fff;
+    transform: scale(1.05);
   }
   
   /* Estilos del contenido principal */
@@ -140,5 +143,13 @@ body {
   /* Estilos responsivos */
   @media (max-width: 768px) {
     ul li {
-      flex: 1 1 calc(50%
+      flex: 1 1 calc(50% - 2rem);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    ul li {
+      flex: 1 1 100%;
+    }
+  }
   
