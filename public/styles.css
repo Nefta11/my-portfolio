@@ -82,6 +82,56 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
+  /* Estilos de la sección de contacto */
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: #733c7a;
+    color: #fff;
+  }
+  
+  .contact-text {
+    max-width: 50%;
+  }
+  
+  .contact-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .contact-text a {
+    color: #f7c8e8;
+    font-weight: 700;
+  }
+  
+  .contact-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+  }
+  
+  .contact-section .social-icons {
+    margin-top: 1rem;
+  }
+  
+  .contact-section .social-icons a {
+    color: #fff;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+  
+  .contact-section .social-icons a:hover {
+    color: #d4b0f2;
+  }
+  
   /* Estilos del pie de página */
   footer {
     background-color: #6a0572;
@@ -110,14 +160,16 @@ body {
   
   /* Estilos responsivos */
   @media (max-width: 768px) {
-    .hero-section {
+    .hero-section,
+    .contact-section {
       flex-direction: column;
       text-align: center;
       height: auto;
       padding: 2rem;
     }
   
-    .hero-text {
+    .hero-text,
+    .contact-text {
       max-width: 100%;
       margin-bottom: 2rem;
     }

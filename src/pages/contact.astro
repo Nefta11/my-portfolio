@@ -1,0 +1,31 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html>
+  <head>
+    <title>Contacto - Mi Portafolio</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  </head>
+  <body>
+    <Header />
+    <main class="contact-section">
+      <div class="contact-text">
+        <h2>Siempre estoy listo para charlar.</h2>
+        <p>Dame un correo electrónico en <br><a href="mailto:hi@neft.codes">hi@neft.codes</a> <br>o dame un grito en las redes sociales.</p>
+        <div class="social-icons">
+          <a href="https://twitter.com/neft" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://linkedin.com/in/neft" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="contact-image">
+        <img src="/path/to/your/avatar.png" alt="Avatar">
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>
