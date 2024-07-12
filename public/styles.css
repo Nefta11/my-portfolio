@@ -111,7 +111,7 @@ body {
     font-weight: 700;
   }
   
-  .contact-image img {
+  .contact-image svg {
     width: 100%;
     max-width: 300px;
     border-radius: 10px;
