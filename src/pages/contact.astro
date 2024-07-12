@@ -1,0 +1,67 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html>
+  <head>
+    <title>Contacto - Mi Portafolio</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  </head>
+  <body>
+    <Header />
+    <main class="contact-section">
+      <div class="contact-text">
+        <h2>Siempre estoy listo para charlar.</h2>
+        <p>Dame un correo electrónico en <br><a href="mailto:hi@neft.codes">hi@neft.codes</a> <br>o dame un grito en las redes sociales.</p>
+        <div class="social-icons">
+          <a href="https://twitter.com/neft" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://linkedin.com/in/neft" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="contact-image">
+        <svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+          <!-- Fondo -->
+          <circle cx="150" cy="150" r="150" fill="#733c7a"/>
+
+          <!-- Cabeza -->
+          <circle cx="150" cy="90" r="50" fill="#f3c9b6"/>
+
+          <!-- Pelo -->
+          <path d="M100 90 C 100 50, 200 50, 200 90 Q 150 30, 100 90" fill="#4b3f3d"/>
+
+          <!-- Ojos -->
+          <circle cx="130" cy="80" r="5" fill="#000"/>
+          <circle cx="170" cy="80" r="5" fill="#000"/>
+
+          <!-- Boca -->
+          <path d="M130 110 Q 150 130, 170 110" stroke="#000" stroke-width="3" fill="none"/>
+
+          <!-- Cuerpo -->
+          <rect x="120" y="140" width="60" height="80" fill="#4b3f3d"/>
+
+          <!-- Brazos -->
+          <rect x="80" y="140" width="40" height="10" fill="#f3c9b6"/>
+          <rect x="180" y="140" width="40" height="10" fill="#f3c9b6"/>
+
+          <!-- Camiseta -->
+          <rect x="120" y="140" width="60" height="40" fill="#555"/>
+
+          <!-- Computadora -->
+          <rect x="100" y="220" width="100" height="60" fill="#ccc" stroke="#000" stroke-width="2"/>
+          <rect x="110" y="230" width="80" height="30" fill="#fff"/>
+          <line x1="110" y1="245" x2="190" y2="245" stroke="#000" stroke-width="2"/>
+          <line x1="110" y1="250" x2="190" y2="250" stroke="#000" stroke-width="2"/>
+          <line x1="110" y1="255" x2="190" y2="255" stroke="#000" stroke-width="2"/>
+
+          <!-- Lentes -->
+          <path id="glasses" d="M163.54 81.76c-4.7-1.42-15.29-2.42-19.83-.45-5.82 2.17-3.18 1.57-8.55 1.17-5.36.4-2.74 1-8.55-1.18-7.3-2.55-15.58-.24-22.25.72v2.75c2.46.24 1.26 6.78 3.06 10.32 2.13 7.23 12.69 9.55 18.19 5.49 3.9-2 7.08-10.32 7.21-12.86 0-1.64 4.15-2.57 4.61.24.11 2.53 3.42 10.69 7.28 12.62 5.5 4 16 1.74 18.17-5.49 1.8-3.54 1.69-9.92 2.88-10.32s.74-2.67 0-2.75-1.02-.1-2.22-.26zM127.25 97.49C120.94 104.81 109 101.2 108 92.3c-.7-2.62-1-7.3 1.27-9.12s6.88-1.87 9.23-2c11.14-.26 16.62 5.6 8.75 16.31zm35.12-5.19c-3.71 17.2-27.26 7.42-22.09-7.36 1.87-3.11 9.09-3.84 11.55-3.73 8.07-.04 12.7 1.79 10.54 11.09z" fill="#c6c6c6" opacity=".48"/>
+        </svg>
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>

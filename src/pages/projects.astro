@@ -1,0 +1,42 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Project {
+  title: string;
+  description: string;
+  image: string;
+}
+
+const projects: Project[] = [
+  { title: 'Proyecto 1', description: 'Descripción del proyecto 1', image: 'https://via.placeholder.com/300x200' },
+  { title: 'Proyecto 2', description: 'Descripción del proyecto 2', image: 'https://via.placeholder.com/300x200' },
+  // Agrega más proyectos aquí
+];
+---
+
+<html>
+  <head>
+    <title>Proyectos</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <h1 class="animate__animated animate__fadeInDown">Mis Proyectos</h1>
+      <ul>
+        {projects.map(project => (
+          <li class="animate__animated animate__zoomIn">
+            <img src={project.image} alt={project.title} />
+            <h2>{project.title}</h2>
+            <p>{project.description}</p>
+          </li>
+        ))}
+      </ul>
+    </main>
+    <Footer />
+  </body>
+</html>
