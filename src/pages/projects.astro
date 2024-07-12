@@ -1,0 +1,37 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Project {
+  title: string;
+  description: string;
+}
+
+const projects: Project[] = [
+  { title: 'Proyecto 1', description: 'Descripción del proyecto 1' },
+  { title: 'Proyecto 2', description: 'Descripción del proyecto 2' },
+  // Agrega más proyectos aquí
+];
+---
+
+<html>
+  <head>
+    <title>Proyectos</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <Header />
+    <main>
+      <h1>Mis Proyectos</h1>
+      <ul>
+        {projects.map(project => (
+          <li>
+            <h2>{project.title}</h2>
+            <p>{project.description}</p>
+          </li>
+        ))}
+      </ul>
+    </main>
+    <Footer />
+  </body>
+</html>
