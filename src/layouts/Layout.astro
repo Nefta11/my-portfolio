@@ -22,10 +22,7 @@ const { description, title } = Astro.props
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <ViewTransitions />
-    <!-- Asegúrate de incluir FontAwesome si necesitas los íconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   </head>
-
   <body>
     <Header />
     <slot />
@@ -37,11 +34,9 @@ const { description, title } = Astro.props
 
       html {
         font-family: system-ui, sans-serif;
-        background-color: black;
       }
-
       body {
-        color: rgba(17, 17, 17, 0.9);
+        background: #000;
         display: flex;
         justify-content: center;
       }
