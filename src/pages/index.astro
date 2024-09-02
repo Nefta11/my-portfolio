@@ -4,7 +4,7 @@ import Layout from "../layouts/Layout.astro"
 import LinkeIndIcon from "../components/Icons/LinkeInd.astro"
 import SocialPill from "../components/SocialPill.astro" 
 import GitHubIcon from "../components/Icons/GitHubIcon.astro"
-
+import MailIcon from "../components/Icons/MailIcon.astro"
 ---
 <Layout title="Welcome to my profile">
 <main>
@@ -29,7 +29,7 @@ import GitHubIcon from "../components/Icons/GitHubIcon.astro"
     <span class="opacity-85">Especializado Siuu</span>
   </h2>
 
-    <nav class="flex gap-x-2">
+    <nav class="flex gap-x-4 mt-8" >
       <SocialPill href="https://www.linkedin.com/in/neftali-arturo-hern%C3%A1ndez-vergara-9996a8229/">
         <LinkeIndIcon class="w-6 h-6"/>
         LinkedIn
@@ -37,6 +37,10 @@ import GitHubIcon from "../components/Icons/GitHubIcon.astro"
       <SocialPill href="https://github.com/Nefta11">
         <GitHubIcon class="w-6 h-6"/>
         GitHub
+      </SocialPill>
+      <SocialPill href="neftaliarturoherandez@gmail.com">
+        <MailIcon class="w-6 h-6"/>
+        neftaliarturoherandez@gmail.com
       </SocialPill>
     </nav>
 
