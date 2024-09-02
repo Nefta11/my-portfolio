@@ -2,6 +2,8 @@
 import Badge from "../components/Badge.astro"
 import Layout from "../layouts/Layout.astro"
 import LinkeIndIcon from "../components/Icons/LinkeInd.astro"
+import SocialPill from "../components/SocialPill.astro" 
+
 ---
 <Layout title="Welcome to my profile">
 <main>
@@ -28,9 +30,10 @@ import LinkeIndIcon from "../components/Icons/LinkeInd.astro"
 
   <ul>
     <li>
-      <a href="https://www.linkedin.com/in/neftali-arturo-hern%C3%A1ndez-vergara-9996a8229/">
+      <SocialPill>
         <LinkeIndIcon class="w-6 h-6"/>
-        LinkedIn</a>
+        LinkedIn
+      </SocialPill>
     </li>
   </ul>
 
