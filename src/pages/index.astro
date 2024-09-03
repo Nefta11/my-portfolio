@@ -9,6 +9,8 @@ import WhatsAppIcon from "../components/Icons/WhatsAppIcon.astro"
 import Experiences from "../components/Experiences.astro"
 import SectionContainer from "../components/SectionContainer.astro"
 import Briefcase from "../components/Icons/Briefcase.astro"
+import Code from "../components/Icons/Code.astro"
+import Projects from "../components/Projects.astro"
 ---
 <Layout 
 title="Portafolio de Neftali Vergara desarrollador fullstack jr con 1 año de experiencia"
@@ -59,13 +61,21 @@ description="Contrata a neftali para el desarrollo de software te aportara demas
     </nav>
 
   </SectionContainer>
-<SectionContainer id="experiencia">
-  <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
-<Briefcase class="size-7"/>
-    Experiencia Laboral
-  </h2>
-  <Experiences/>
-</SectionContainer>
+    <SectionContainer id="experiencia">
+      <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+    <Briefcase class="size-7"/>
+        Experiencia
+      </h2>
+      <Experiences/>
+    </SectionContainer>
+
+    <SectionContainer id="experiencia">
+      <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+    <Code class="size-7"/>
+        Proyectos
+      </h2>
+      <Projects/>
+    </SectionContainer>
 </main>
 </Layout>
 
