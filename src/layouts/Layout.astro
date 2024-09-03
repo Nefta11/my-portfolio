@@ -1,6 +1,7 @@
 ---
 import '@fontsource-variable/onest';
 import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro';
 
 interface Props {
   title: string,
@@ -26,6 +27,7 @@ const { description, title } = Astro.props
     [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
     <Header />
     <slot />
+  <Footer/>
   </body>
   </html>
     <style is:global>
