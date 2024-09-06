@@ -1,10 +1,10 @@
 ---
 const PROJECTS = [
-    { title:"Gran Bazar",
+    { title:"Dragpn Ball Z API",
     description:"Aute pariatur mollit duis proident anim mollit ea est reprehenderit sint proident excepteur aliqua.",
-    link:"#",
-    github:"#",
-    image:"",
+    link:"https://web.dragonball-api.com/",
+    github:"https://github.com/eiberham/dragonball",
+    image:"/public/images/projects/858shots_so.png",
     tags:["HTML","CSS","JavaScript"]
     }
 ]
@@ -13,14 +13,17 @@ const PROJECTS = [
 {
     PROJECTS.map(({image, title, description, tags})=>(
         <article>
-            <h3>{title}</h3>
-            <p>{description}</p>
+            <h3 class="text-2xl font-semibold text-violet-500 mb-2">{title}</h3>
+            <p class="text-lg mb-4 text-pretty">{description}</p>
             <ul>
                 {tags.map((tag) => (
             <li>{tag}</li>
             ))}
             </ul>
-            <img src={image} alt={`Captura de pantalla del proyecto ${image}`} />
+            <img 
+            class="rounded shadow-2xl shadow-white/10"
+            src={image} 
+            alt={`Captura de pantalla del proyecto ${image}`} />
         </article>
     ))
 }
