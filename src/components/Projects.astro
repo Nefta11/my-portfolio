@@ -1,11 +1,27 @@
 ---
+import PhpIcon from "../components/Icons/PhpIcon.astro"
+import HtmlIcon from "../components/Icons/HtmlIcon.astro"
+
+const TAGS = {
+Php:{
+    name:"Php",
+    class:"bg-[#AEB2D5] text-black ",
+    icon: PhpIcon
+},
+Html:{
+    name:"HTML",
+    class:"bg-[#df9c28] text-white",
+    icon: HtmlIcon
+}
+}
+
 const PROJECTS = [
-    { title:"Dragpn Ball Z API",
+    { title:"Dragon Ball Z API",
     description:"Aute pariatur mollit duis proident anim mollit ea est reprehenderit sint proident excepteur aliqua.",
     link:"https://web.dragonball-api.com/",
     github:"https://github.com/eiberham/dragonball",
     image:"/public/images/projects/858shots_so.png",
-    tags:["HTML","CSS","JavaScript"]
+    tags:[TAGS.Php, TAGS.Html]
     }
 ]
 ---
@@ -15,9 +31,14 @@ const PROJECTS = [
         <article>
             <h3 class="text-2xl font-semibold text-violet-500 mb-2">{title}</h3>
             <p class="text-lg mb-4 text-pretty">{description}</p>
-            <ul>
+            <ul class="flex gap-x-2 flex-row mb-2">
                 {tags.map((tag) => (
-            <li>{tag}</li>
+            <li>
+            <span class ={ `flex gap-x-2 rounded-full text-xs ${tag.class} py-2 px-2`}>
+                <tag.icon class="size-4"/>
+                {tag.name}
+            </span>
+            </li>
             ))}
             </ul>
             <img 
