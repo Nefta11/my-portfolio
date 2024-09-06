@@ -22,9 +22,10 @@ const { description, title } = Astro.props
     <title>{title}</title>
   </head>
   <body>
-    <div class="absolute inset-0 -z-10 h-full w-full 
+    <div class="fixed inset-0 -z-10 h-full w-full 
     items-center px-5 py-24 
-    [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
+    [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
+  </div>
     <Header />
     <slot />
   <Footer/>
@@ -51,4 +52,4 @@ const { description, title } = Astro.props
           scroll-behavior: auto;
         }
       }
-    </style>
+    </style>fixed inset-0 
