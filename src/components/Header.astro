@@ -1,13 +1,23 @@
-<header 
-class="flex justify-center items-center py-5 w-full xl:w-[1120px] 
-mx-auto"
->
+---
+import SocialPill from "./SocialPill.astro";
+import CVIcon from "../components/Icons/CV.astro";
+---
 
-  <nav class="flex flex-row gap-x-12 opacity-80">
-    <a href="#top">Inicio</a>
-    <a href="#experiencia">Experiencia</a>
-    <a href="#proyectos">Proyectos</a>
-    <a href="#sobre-mi">Sobre mi</a>
-    <a href="#contacto">Contacto</a> 
+<header
+  class="flex justify-center items-center py-5 w-full xl:w-[1120px] mx-auto"
+>
+  <nav class="flex flex-row gap-x-12 items-center opacity-80">
+    <a href="#top" class="flex items-center">Inicio</a>
+    <a href="#experiencia" class="flex items-center">Experiencia</a>
+    <a href="#proyectos" class="flex items-center">Proyectos</a>
+    <a href="#sobre-mi" class="flex items-center">Sobre mi</a>
+    <a href="#contacto" class="flex items-center">Contacto</a>
+    <SocialPill
+      href=""
+      class="flex items-center"
+    >
+      <CVIcon class="size-4 lg:size-6 mr-2" />
+      Descargar CV
+    </SocialPill>
   </nav>
 </header>
