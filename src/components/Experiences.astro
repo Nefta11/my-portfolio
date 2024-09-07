@@ -1,39 +1,41 @@
 ---
-import ExperienceItems from "./ExperienceItems.astro"
+import ExperienceItems from "./ExperienceItems.astro";
 
 const EXPERIENCE = [
     {
         date: "Actualmente",
         title: "Estudiante de Ingeniería en Desarrollo y Gestión de Software",
-        description: "Adquiriendo conocimientos en desarrollo de software, gestión de proyectos y tecnologías emergentes para crear soluciones innovadoras."
+        description: "En la actualidad, me encuentro en formación como ingeniero en desarrollo y gestión de software en la Universidad Tecnológica de Xicotepec de Juárez, donde estoy ampliando mis conocimientos en técnicas avanzadas de programación, administración de proyectos y tecnologías emergentes."
     },
     {
-    date: "Julio 2023",
-    title: "API Rest con Node.js",
-    description: "Desarrolla y gestiona APIs con Node.js y Express, optimizando la integración de datos y servicios."
+        date: "Abril 2024 - Agosto 2024",
+        title: "Fullstack Jr. App Móvil Ultra | Startdust S.A DE C.V",
+        description: "Durante mi estadía técnica en la empresa Startdust, participé en el desarrollo de interfaces móviles para la aplicación Ultra Trail utilizando React Native. Diseñé y desarrollé APIs con Slim PHP, garantizando su óptimo funcionamiento a través de exhaustivas pruebas en Postman. Además, colaboré en la creación y optimización de la base de datos en MySQL, asegurando que la infraestructura soportara todas las funcionalidades de la aplicación."
     },
     {
-        date: "Agosto 2023",
-        title: "Aplicación CRUD con Django",
-        description: "Implementa operaciones CRUD eficientes utilizando Django, un potente framework de Python."
+        date: "Septiembre 2023 - Diciembre 2023",
+        title: "API-Agéndalo | Aplicación Web",
+        description: "Como miembro del equipo de desarrollo estudiantil, contribuí a la creación de 'Agéndalo', una aplicación web de citas para servicios. Mi enfoque principal fue en la revisión y modelado de la base de datos existente, así como en el desarrollo del proyecto en Node.js utilizando el patrón MVC y Sequelize como ORM. Implementé una API para la gestión de usuarios, abarcando desde la creación de modelos hasta la configuración de rutas."
     },
     {
-        date: "Septiembre 2023",
-        title: "Sitio web dinámico con React",
-        description: "Crea aplicaciones web interactivas y dinámicas utilizando React y su ecosistema de componentes reutilizables."
+        date: "Octubre 2023 - Noviembre 2023",
+        title: "Api-ti & Api-IOT | APIs y Página Web",
+        description: "Durante el curso de Node.js y Smart Manufacturing, desarrollé dos APIs con enfoques específicos: API-TI para la gestión académica y API-IOT para la conexión de sensores. En ambos proyectos, utilicé Node.js, EJS, Bootstrap y MongoDB Atlas. La API-TI simplifica las operaciones CRUD para el control estudiantil, mientras que la API-IOT integra una tarjeta Nodemcu wifi con un sensor para recolectar y almacenar datos de temperatura y humedad en MongoDB Atlas."
+    },
+    {
+        date: "Mayo 2023 - Agosto 2023",
+        title: "Gran_Bazar | Página Web",
+        description: "Desarrollé una página web dinámica de comercio electrónico utilizando CSS, PHP, SQL y HTML. Implementé funciones y procedimientos almacenados para simular datos realistas en la base de datos. Aunque la página no está actualmente en línea, ofrecía una experiencia de usuario interactiva con funciones como creación de cuentas, inicio de sesión y un carrito de compras para productos."
     }
-
 ]
 ---
 
 <ol class="relative border-s border-gray-200 ml-3">
     {
-        EXPERIENCE.map((experience)=>(
+        EXPERIENCE.map((experience) => (
         <li class="mb-10 ms-4">
-            <ExperienceItems {...experience }/>
+            <ExperienceItems {...experience} />
         </li>  
         ))
-        
     }
 </ol>
-
