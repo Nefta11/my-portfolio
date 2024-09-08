@@ -7,17 +7,22 @@ import GitHubIcon from "@/components/Icons/GitHubIcon.astro";
 ---
 
 <Layout title="Design System portfolio" description="Catalogo de componentes">
-  <SectionContainer class="py-44 pb-32">
-    <h1>&lt;Badge /&gt;</h1>
+  <SectionContainer class="py-44 pb-32 flex flex-col gap-y-10">
+    <article class="mb-10">
+      <h1 class="mb-4 text-xl font-semibold">&lt;Badge /&gt;</h1>
 
-    <Badge>Tailwind</Badge>
-    <Badge>Css</Badge>
+      <Badge>Preparado para aportar</Badge>
+    </article class="mb-10">
 
-    <h1>&lt;SocialPill /&gt;</h1>
+    <article class="mb-10">
+      <h1 class="mb-4 text-xl font-semibold">&lt;SocialPill /&gt;</h1 class="mb-4">
 
-    <SocialPill href="https://github.com/Nefta11">
-      <GitHubIcon class="size-4 md:size-6" />
-      GitHub
-    </SocialPill>
+      <di class="flex">
+      <SocialPill href="https://github.com/Nefta11">
+        <GitHubIcon class="size-4 md:size-6" />
+        GitHub
+      </SocialPill>
+    </di>
+    </article>
   </SectionContainer>
 </Layout>
