@@ -4,22 +4,35 @@ import CVIcon from "../components/Icons/CV.astro";
 ---
 
 <header
-  class="flex justify-center items-center py-5 w-full xl:w-[1120px] mx-auto"
+  class={`
+  flex justify-center items-center
+  mx-auto
+  py-5
+  sticky top-0
+  w-full xl:w-[1120px]
+  z-10
+  `}
 >
-  <nav class="flex flex-row gap-x-12 items-center opacity-80">
-    <a href="/#experiencia" class="flex items-center">Experiencia</a>
-    <a href="/#proyectos" class="flex items-center">Proyectos</a>
-    <a href="/#sobre-mi" class="flex items-center">Sobre mi</a>
-    <a href="/#contacto" class="flex items-center">Contacto</a>
-    <SocialPill
+  <nav class={`
+  border border-black rounded-full
+  px-3 py-1 
+  flex flex-row items-center
+bg-gradient-to-r from-violet-700 to-black dark:from-black/50 dark:to-black
+  backdrop-blur-2xl
+  `}>
+    <a href="/#experiencia" class="hover:bg-black/30 rounded-full px-3 transition">Experiencia</a>
+    <a href="/#proyectos" class="hover:bg-black/30 rounded-full px-3 transition">Proyectos</a>
+    <a href="/#sobre-mi" class="hover:bg-black/30 rounded-full px-3 transition">Sobre mi</a>
+    <a href="/#contacto" class="hover:bg-black/30 rounded-full px-3 transition">Contacto</a>
+    <a
     href="../../public/Currículum NeftaliVergara_DEV.pdf"
-    class="flex items-center"
-    download
+    class="hover:bg-white/20 rounded-full px-5 transition flex items-center" 
     download="CV_NeftaliArturoHernandezVergara"
   >
-    <CVIcon class="size-4 lg:size-6 mr-2" />
-    Descargar CV
-  </SocialPill>
+    <CVIcon class="size-4 lg:size-6" /> <!-- Asegúrate de no usar margen adicional aquí -->
+    <span class="ml-1">Descargar CV</span> <!-- Controla el espacio entre el icono y el texto -->
+  </a>
+  
   
   </nav>
 </header>
