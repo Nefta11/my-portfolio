@@ -13,26 +13,37 @@ import CVIcon from "../components/Icons/CV.astro";
   z-10
   `}
 >
-  <nav class={`
+  <nav
+    class={`
   border border-black rounded-full
   px-3 py-1 
   flex flex-row items-center
 bg-gradient-to-r from-violet-700 to-black dark:from-black/50 dark:to-black
   backdrop-blur-2xl
-  `}>
-    <a href="/#experiencia" class="hover:bg-black/30 rounded-full px-3 transition">Experiencia</a>
-    <a href="/#proyectos" class="hover:bg-black/30 rounded-full px-3 transition">Proyectos</a>
-    <a href="/#sobre-mi" class="hover:bg-black/30 rounded-full px-3 transition">Sobre mi</a>
-    <a href="/#contacto" class="hover:bg-black/30 rounded-full px-3 transition">Contacto</a>
-    <a
-    href="../../public/Currículum NeftaliVergara_DEV.pdf"
-    class="hover:bg-white/20 rounded-full px-5 transition flex items-center" 
-    download="CV_NeftaliArturoHernandezVergara"
+  `}
   >
-    <CVIcon class="size-4 lg:size-6" /> <!-- Asegúrate de no usar margen adicional aquí -->
-    <span class="ml-1">Descargar CV</span> <!-- Controla el espacio entre el icono y el texto -->
-  </a>
-  
-  
+    <a
+      href="/#experiencia"
+      class="hover:bg-black/30 rounded-full px-3 transition">Experiencia</a
+    >
+    <a href="/#proyectos" class="hover:bg-black/30 rounded-full px-3 transition"
+      >Proyectos</a
+    >
+    <a href="/#sobre-mi" class="hover:bg-black/30 rounded-full px-3 transition"
+      >Sobre mi</a
+    >
+    <a href="/#contacto" class="hover:bg-black/30 rounded-full px-3 transition"
+      >Contacto</a
+    >
+    <a
+      href="../../public/Currículum NeftaliVergara_DEV.pdf"
+      class="hover:bg-white/20 rounded-full px-5 transition flex items-center"
+      download="CV_NeftaliArturoHernandezVergara"
+    >
+      <CVIcon class="size-4 lg:size-6" />
+      <!-- Asegúrate de no usar margen adicional aquí -->
+      <span class="ml-1">Descargar CV</span>
+      <!-- Controla el espacio entre el icono y el texto -->
+    </a>
   </nav>
 </header>
