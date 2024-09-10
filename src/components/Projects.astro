@@ -2,6 +2,8 @@
 import PhpIcon from "../components/Icons/PhpIcon.astro";
 import HtmlIcon from "../components/Icons/HtmlIcon.astro";
 import JavaScriptIcon from "../components/Icons/JavaScriptIcon.astro";
+import CssIcon from "./Icons/CssIcon.astro";
+import MysqlIcon from "./Icons/MysqlIcon.astro";
 
 const TAGS = {
   Php: {
@@ -19,6 +21,16 @@ const TAGS = {
     name: "Java Script",
     class: "bg-gradient-to-r from-gray-400 to-gray-600 text-white",
     icon: JavaScriptIcon,
+  },
+  css: {
+    name: "CSS",
+    class: "bg-gradient-to-r from-blue-400 via-blue-500 to-blue-700 text-white",
+    icon: CssIcon,
+  },
+  Mysql: {
+    name: "MySQL",
+    class: "bg-gradient-to-r from-cyan-500 to-blue-800 text-white",
+    icon: MysqlIcon,
   },
 };
 
@@ -40,7 +52,7 @@ const PROJECTS = [
     github: "https://github.com/eiberham/dragonball",
     image:
       "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/GranBazar.png",
-    tags: [TAGS.Php, TAGS.Html, TAGS.JavaScript],
+    tags: [TAGS.Php, TAGS.Html, TAGS.JavaScript, TAGS.css, TAGS.Mysql],
   },
 ];
 ---
