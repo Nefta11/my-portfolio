@@ -1,58 +1,72 @@
 ---
-import PhpIcon from "../components/Icons/PhpIcon.astro"
-import HtmlIcon from "../components/Icons/HtmlIcon.astro"
+import PhpIcon from "../components/Icons/PhpIcon.astro";
+import HtmlIcon from "../components/Icons/HtmlIcon.astro";
+import JavaScriptIcon from "../components/Icons/JavaScriptIcon.astro";
 
 const TAGS = {
-Php:{
-    name:"Php",
-    class:"bg-[#AEB2D5] text-black ",
-    icon: PhpIcon
-},
-Html:{
-    name:"HTML",
-    class:"bg-[#df9c28] text-white",
-    icon: HtmlIcon
-}
-}
+  Php: {
+    name: "PHP",
+    class:
+      "bg-gradient-to-r from-indigo-400 via-purple-500 to-indigo-700 text-white",
+    icon: PhpIcon,
+  },
+  Html: {
+    name: "HTML",
+    class: "bg-gradient-to-r from-orange-400 to-red-600 text-white",
+    icon: HtmlIcon,
+  },
+  JavaScript: {
+    name: "Java Script",
+    class: "bg-gradient-to-r from-gray-400 to-gray-600 text-white",
+    icon: JavaScriptIcon,
+  },
+};
 
 const PROJECTS = [
-    { title:"Dragon Ball Z API",
-    description:"Aute pariatur mollit duis proident anim mollit ea est reprehenderit sint proident excepteur aliqua.",
-    link:"https://web.dragonball-api.com/",
-    github:"https://github.com/eiberham/dragonball",
-    image:"/public/images/projects/858shots_so.png",
-    tags:[TAGS.Php, TAGS.Html]
-    },
-    { title:"Dragon Ball Z API",
-    description:"Aute pariatur mollit duis proident anim mollit ea est reprehenderit sint proident excepteur aliqua.",
-    link:"https://web.dragonball-api.com/",
-    github:"https://github.com/eiberham/dragonball",
-    image:"https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/GranBazar.png",
-    tags:[TAGS.Php, TAGS.Html]
-    },
-]
+  {
+    title: "Dragon Ball Z API",
+    description:
+      "Aute pariatur mollit duis proident anim mollit ea est reprehenderit sint proident excepteur aliqua.",
+    link: "https://web.dragonball-api.com/",
+    github: "https://github.com/eiberham/dragonball",
+    image: "/public/images/projects/858shots_so.png",
+    tags: [TAGS.Php, TAGS.Html],
+  },
+  {
+    title: "Gran Bazar",
+    description:
+      "Desarrollé esta aplicación web como parte de un proyecto integrador universitario, utilizando tecnologías como PHP, HTML, CSS, JavaScript y MySQL para el desarrollo tanto del frontend como del backend, sin el uso de frameworks. Además, diseñé y configuré la base de datos, incorporando procedimientos almacenados, funciones y vistas para la simulación y gestión de los datos. La aplicación incluye funcionalidades clave como el registro y acceso de usuarios, un carrito de compras para la visualización de productos seleccionados, y la opción de cerrar sesión de manera segura",
+    link: "https://web.dragonball-api.com/",
+    github: "https://github.com/eiberham/dragonball",
+    image:
+      "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/GranBazar.png",
+    tags: [TAGS.Php, TAGS.Html, TAGS.JavaScript],
+  },
+];
 ---
 
 {
-    PROJECTS.map(({image, title, description, tags})=>(
-        <article>
-            <h3 class="text-2xl font-semibold text-violet-500 mb-2">{title}</h3>
-            <p class="text-lg mb-4 text-pretty">{description}</p>
-            <ul class="flex gap-x-2 flex-row mb-2">
-                {tags.map((tag) => (
-            <li>
-            <span class ={ `flex gap-x-2 rounded-full text-xs ${tag.class} py-2 px-2`}>
-                <tag.icon class="size-4"/>
-                {tag.name}
+  PROJECTS.map(({ image, title, description, tags }) => (
+    <article>
+      <h3 class="text-2xl font-semibold text-violet-500 mb-2">{title}</h3>
+      <p class="text-lg mb-4 text-pretty">{description}</p>
+      <ul class="flex gap-x-2 flex-row mb-2">
+        {tags.map((tag) => (
+          <li>
+            <span
+              class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-2 px-2`}
+            >
+              <tag.icon class="size-4" />
+              {tag.name}
             </span>
-            </li>
-            ))}
-            </ul>
-            <img 
-            class="rounded shadow-2xl shadow-white/10"
-            src={image} 
-            alt={`Captura de pantalla del proyecto ${image}`} />
-        </article>
-    ))
+          </li>
+        ))}
+      </ul>
+      <img
+        class="rounded shadow-2xl shadow-white/10"
+        src={image}
+        alt={`Captura de pantalla del proyecto ${image}`}
+      />
+    </article>
+  ))
 }
-
