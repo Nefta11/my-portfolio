@@ -83,7 +83,7 @@ const TAGS = {
 const PROJECTS = [
   {
     title: "Ultra Trail(Modulo Boletos)",
-    description:"Desarrollo del módulo de métodos de pago y compra de boletos para la aplicación Ultra Trail, enfocada en carreras de montaña. Maqueté y desarrollé interfaces en React Native ejecutadas en Expo, creando pantallas para métodos de pago, compra de boletos, carrito de compras y visualización de boletos. Stripe fue implementado para la gestión segura de pagos. Node.js se utilizó para la configuración del entorno y ejecución del código JavaScript en React. Además, desarrollé y consumí APIs con Slim PHP para manejar transacciones y la gestión de boletos, utilizando MySQL para el almacenamiento de datos.",
+    description:"Desarrollo del módulo de métodos de pago y compra de boletos para la aplicación Ultra Trail, enfocada en carreras de montaña. Maqueté y desarrollé interfaces en React Native ejecutadas en Expo, creando pantallas para métodos de pago, compra de boletos, carrito de compras y visualización de boletos. Stripe fue implementado para la gestión segura de pagos. Node.js se utilizó para la configuración del entorno y ejecución del código JavaScript en React. Desarrollé y consumí APIs con Slim PHP para manejar transacciones y la gestión de boletos, utilizando MySQL para el almacenamiento de datos. Postman se utilizó para la prueba y documentación de las APIs creadas, asegurando su correcto funcionamiento y facilitando la integración del backend con el frontend.",
     link: "https://web.dragonball-api.com/",
     github: "https://github.com/eiberham/dragonball",
     image: "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/UltraTrail.png",
@@ -106,7 +106,7 @@ const PROJECTS = [
   PROJECTS.map(({ image, title, description, tags }) => (
     <article>
       <h3 class="text-2xl font-semibold text-violet-500 mb-2">{title}</h3>
-      <p class="text-lg mb-4 text-pretty">{description}</p>
+      <p class="text-sm mb-4 text-pretty">{description}</p>
       <ul class="flex gap-x-2 flex-row mb-2">
         {tags.map((tag) => (
           <li>
