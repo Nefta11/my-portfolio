@@ -7,52 +7,63 @@ import MysqlIcon from "./Icons/MysqlIcon.astro";
 import ReactIcon from "./Icons/ReactIcon.astro";
 import ExpoIcon from "./Icons/ExpoIcon.astro";
 import PostmanIcon from "./Icons/PostmanIcon.astro";
+import NodeIcon from "../components/Icons/NodeIcon.astro";
 
 const TAGS = {
   Php: {
     name: "PHP",
     class:
-      "bg-gradient-to-r from-indigo-400 via-purple-500 to-indigo-700 text-white",
+      "bg-gradient-to-r from-indigo-400/40 via-purple-500/40 to-indigo-700/40 text-white",
     icon: PhpIcon,
   },
   Html: {
     name: "HTML",
-    class: "bg-gradient-to-r from-orange-400 to-red-600 text-white",
+    class: "bg-gradient-to-r from-orange-400/40 to-red-600/40 text-white",
     icon: HtmlIcon,
   },
   JavaScript: {
     name: "JavaScript",
-    class: "bg-gradient-to-r from-gray-400 to-gray-600 text-white",
+    class: "bg-gradient-to-r from-yellow-400/40 to-yellow-600/40 text-white",
     icon: JavaScriptIcon,
   },
   css: {
     name: "CSS",
-    class: "bg-gradient-to-r from-blue-400 via-blue-500 to-blue-700 text-white",
+    class:
+      "bg-gradient-to-r from-blue-400/40 via-blue-500/40 to-blue-700/40 text-white",
     icon: CssIcon,
   },
   Mysql: {
     name: "MySQL",
-    class: "bg-gradient-to-r from-cyan-500 to-blue-800 text-white",
+    class: "bg-gradient-to-r from-cyan-500/40 to-blue-800/40 text-white",
     icon: MysqlIcon,
   },
   react: {
     name: "React",
-    class: "bg-gradient-to-r from-blue-400 via-cyan-500 to-teal-400 text-white",
+    class:
+      "bg-gradient-to-r from-blue-400/40 via-cyan-500/40 to-teal-400/40 text-white",
     icon: ReactIcon,
   },
   Expo: {
     name: "Expo",
     class:
-      "bg-gradient-to-r from-purple-500 via-indigo-600 to-indigo-800 text-white",
+      "bg-gradient-to-r from-purple-500/40 via-indigo-600/40 to-indigo-800/40 text-white",
     icon: ExpoIcon,
   },
   Postman: {
     name: "Postman",
     class:
-      "bg-gradient-to-r from-orange-400 via-orange-500 to-red-500 text-white",
+      "bg-gradient-to-r from-orange-400/40 via-orange-500/40 to-red-500/40 text-white",
     icon: PostmanIcon,
   },
+  Node: {
+    name: "Node.js",
+    class:
+      "bg-gradient-to-r from-green-400/40 via-green-500/40 to-green-700/40 text-white",
+    icon: NodeIcon,
+  },
 };
+
+
 
 const PROJECTS = [
   {
@@ -81,7 +92,7 @@ const PROJECTS = [
     link: "https://web.dragonball-api.com/",
     github: "https://github.com/eiberham/dragonball",
     image: "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/UltraTrail.png",
-    tags: [TAGS.react, TAGS.Expo, TAGS.Postman],
+    tags: [TAGS.react, TAGS.Expo, TAGS.Postman, TAGS.Mysql,TAGS.Node],
   },
 ];
 ---
