@@ -9,6 +9,7 @@ import ExpoIcon from "./Icons/ExpoIcon.astro";
 import PostmanIcon from "./Icons/PostmanIcon.astro";
 import NodeIcon from "../components/Icons/NodeIcon.astro";
 import StripeIcon from "../components/Icons/StripeIcon.astro";
+import SlimPHPIcon from "../components/Icons/SlimIcon.astro"
 
 const TAGS = {
   Php: {
@@ -68,6 +69,12 @@ const TAGS = {
       "bg-gradient-to-r from-indigo-400/40 via-blue-500/40 to-purple-600/40 text-white",
     icon: StripeIcon,
   },
+  SlimPHP: {
+    name: "Slim PHP",
+    class:
+      "bg-gradient-to-r from-gray-800 via-gray-700 to-gray-600 text-white",
+    icon: SlimPHPIcon,
+  },
 };
 
 
@@ -80,7 +87,7 @@ const PROJECTS = [
     link: "https://web.dragonball-api.com/",
     github: "https://github.com/eiberham/dragonball",
     image: "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/UltraTrail.png",
-    tags: [TAGS.Node, TAGS.react, TAGS.Mysql,TAGS.Stripe, TAGS.Expo, TAGS.Postman],
+    tags: [TAGS.Node, TAGS.react, TAGS.Mysql,TAGS.Stripe, TAGS.Expo, TAGS.Postman, TAGS.SlimPHP],
   },
   {
     title: "Gran Bazar",
