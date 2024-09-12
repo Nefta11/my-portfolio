@@ -8,6 +8,7 @@ import ReactIcon from "./Icons/ReactIcon.astro";
 import ExpoIcon from "./Icons/ExpoIcon.astro";
 import PostmanIcon from "./Icons/PostmanIcon.astro";
 import NodeIcon from "../components/Icons/NodeIcon.astro";
+import StripeIcon from "../components/Icons/StripeIcon.astro";
 
 const TAGS = {
   Php: {
@@ -38,7 +39,7 @@ const TAGS = {
     icon: MysqlIcon,
   },
   react: {
-    name: "React",
+    name: "React Native",
     class:
       "bg-gradient-to-r from-blue-400/40 via-cyan-500/40 to-teal-400/40 text-white",
     icon: ReactIcon,
@@ -61,19 +62,25 @@ const TAGS = {
       "bg-gradient-to-r from-green-400/40 via-green-500/40 to-green-700/40 text-white",
     icon: NodeIcon,
   },
+  Stripe: {
+    name: "Stripe",
+    class:
+      "bg-gradient-to-r from-indigo-400/40 via-blue-500/40 to-purple-600/40 text-white",
+    icon: StripeIcon,
+  },
 };
+
 
 
 
 const PROJECTS = [
   {
-    title: "Dragon Ball Z API",
-    description:
-      "Aute pariatur mollit duis proident anim mollit ea est reprehenderit sint proident excepteur aliqua.",
+    title: "Ultra Trail(Modulo Boletos)",
+    description:"Desarrollo del módulo de métodos de pago y compra de boletos para la aplicación Ultra Trail, enfocada en carreras de montaña. Maqueté y desarrollé interfaces en React Native ejecutadas en Expo, creando pantallas para métodos de pago, compra de boletos, carrito de compras y visualización de boletos. Stripe fue implementado para la gestión segura de pagos. Node.js se utilizó para la configuración del entorno y ejecución del código JavaScript en React. Además, desarrollé y consumí APIs con Slim PHP para manejar transacciones y la gestión de boletos, utilizando MySQL para el almacenamiento de datos.",
     link: "https://web.dragonball-api.com/",
     github: "https://github.com/eiberham/dragonball",
-    image: "/public/images/projects/858shots_so.png",
-    tags: [TAGS.Php, TAGS.Html],
+    image: "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/UltraTrail.png",
+    tags: [TAGS.Node, TAGS.react, TAGS.Mysql,TAGS.Stripe, TAGS.Expo, TAGS.Postman],
   },
   {
     title: "Gran Bazar",
@@ -84,15 +91,6 @@ const PROJECTS = [
     image:
       "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/GranBazar.png",
     tags: [TAGS.Php, TAGS.Html, TAGS.JavaScript, TAGS.css, TAGS.Mysql],
-  },
-  {
-    title: "Ultra Trail(Modulo Boletos)",
-    description:
-      "D",
-    link: "https://web.dragonball-api.com/",
-    github: "https://github.com/eiberham/dragonball",
-    image: "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/UltraTrail.png",
-    tags: [TAGS.react, TAGS.Expo, TAGS.Postman, TAGS.Mysql,TAGS.Node],
   },
 ];
 ---
@@ -106,7 +104,7 @@ const PROJECTS = [
         {tags.map((tag) => (
           <li>
             <span
-              class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-2 px-2`}
+              class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2.5`}
             >
               <tag.icon class="size-4" />
               {tag.name}
