@@ -5,24 +5,21 @@ import CVIcon from "../components/Icons/CV.astro";
 
 <header
   class="
-    flex flex-col justify-center items-center
-    mx-auto
-    py-5
-    sticky top-0
-    w-full xl:w-[1120px]
-    z-10
+  flex justify-center items-center
+  mx-auto
+  py-5
+  sticky top-0
+  w-full xl:w-[1120px]
+  z-10
   "
 >
   <nav
     class="
-      border border-black rounded-lg
-      px-3 py-1
-      flex flex-wrap items-center
-      bg-gradient-to-r from-violet-700 to-black dark:from-black/50 dark:to-black
-      backdrop-blur-2xl
-      max-w-full
-      overflow-x-auto
-      text-sm md:text-base lg:text-lg
+  border border-black rounded-xl
+  px-3 py-1 
+  flex flex-row items-center
+bg-gradient-to-r from-violet-700 to-black dark:from-black/50 dark:to-black
+  backdrop-blur-2xl
     "
   >
     <a
@@ -39,7 +36,7 @@ import CVIcon from "../components/Icons/CV.astro";
     >Sobre mi</a>
     <a
       href="../../public/Currículum NeftaliVergara_DEV.pdf"
-      class="hover:bg-white/20 rounded-full px-3 py-1 transition flex items-center"
+      class="hover:bg-white/20 rounded-full px-5 py-1 transition flex items-center"
       download="CV_NeftaliArturoHernandezVergara"
     >
       <CVIcon class="size-3 lg:size-4" />
