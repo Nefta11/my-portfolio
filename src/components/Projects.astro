@@ -101,15 +101,14 @@ const PROJECTS = [
     title: "Gran Bazar",
     description:
       "Desarrollé esta aplicación web como parte de un proyecto integrador universitario, utilizando tecnologías como PHP, HTML, CSS, JavaScript y MySQL para el desarrollo tanto del frontend como del backend, sin el uso de frameworks. Además, diseñé y configuré la base de datos, incorporando procedimientos almacenados, funciones y vistas para la simulación y gestión de los datos. La aplicación incluye funcionalidades clave como el registro y acceso de usuarios, un carrito de compras para la visualización de productos seleccionados, y la opción de cerrar sesión de manera segura",
-    link: "https://web.dragonball-api.com/",
-    github: "https://github.com/eiberham/dragonball",
+    github: "https://github.com/Nefta11/Gran_Bazar",
     image:
       "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/GranBazar.png",
     tags: [TAGS.Php, TAGS.Html, TAGS.JavaScript, TAGS.css, TAGS.Mysql],
   },
 ];
 ---
-
+<section class="flex flex-col gap-y-16">
 {
   PROJECTS.map(({ image, title, description, tags, link , github }) => (
     <article class="pb-11">
@@ -133,16 +132,18 @@ const PROJECTS = [
         alt={`Captura de pantalla del proyecto ${image}`}
       />
       <footer class="flex gap-x-4 items-end justify-start mt-4">
-        <LinkButton href={github}>
+      {github && (<LinkButton href={github}>
         <GitHubIcon class="size-4 md:size-6" />
         Ver codigo Fuente
         </LinkButton>
-        
-        <LinkButton href={link}>
+        )} 
+        {link &&(<LinkButton href={link}>
         <LinkIcon class="size-4 md:size-6"/>
         Ir al citio
         </LinkButton>
+         )}
       </footer>
     </article>
   ))
 }
+<section/>
