@@ -18,25 +18,39 @@ import CVIcon from "../components/Icons/CV.astro";
   border border-black rounded-xl
   px-3 py-1 
   flex flex-row items-center
-bg-gradient-to-r from-violet-700 to-black dark:from-black/50 dark:to-black
+  bg-gradient-to-r from-violet-700 to-black dark:from-black/50 dark:to-black
   backdrop-blur-2xl
-    "
+  space-x-2 sm:space-x-4 md:space-x-6 lg:space-x-8
+  overflow-x-auto
+  "
   >
     <a
       href="/#experiencia"
-      class="hover:bg-black/30 rounded-full px-2 py-1 transition"
+      class="
+      hover:bg-black/30 rounded-full px-2 py-1 transition
+      text-xs sm:text-sm md:text-base
+      "
     >Experiencia</a>
     <a
       href="/#proyectos"
-      class="hover:bg-black/30 rounded-full px-2 py-1 transition"
+      class="
+      hover:bg-black/30 rounded-full px-2 py-1 transition
+      text-xs sm:text-sm md:text-base
+      "
     >Proyectos</a>
     <a
       href="/#sobre-mi"
-      class="hover:bg-black/30 rounded-full px-2 py-1 transition"
+      class="
+      hover:bg-black/30 rounded-full px-2 py-1 transition
+      text-xs sm:text-sm md:text-base
+      "
     >Sobre mi</a>
     <a
       href="../../public/Currículum NeftaliVergara_DEV.pdf"
-      class="hover:bg-white/20 rounded-full px-5 py-1 transition flex items-center"
+      class="
+      hover:bg-white/20 rounded-full px-5 py-1 transition flex items-center
+      text-xs sm:text-sm md:text-base
+      "
       download="CV_NeftaliArturoHernandezVergara"
     >
       <CVIcon class="size-3 lg:size-4" />
