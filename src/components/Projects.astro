@@ -12,6 +12,7 @@ import StripeIcon from "../components/Icons/StripeIcon.astro";
 import SlimPHPIcon from "../components/Icons/SlimIcon.astro";
 import LinkButton from "./LinkButton.astro";
 import GitHubIcon from "./Icons/GitHubIcon.astro";
+import LinkIcon from "../components/Icons/LinkIcon.astro"
 
 const TAGS = {
   Php: {
@@ -110,7 +111,7 @@ const PROJECTS = [
 ---
 
 {
-  PROJECTS.map(({ image, title, description, tags }) => (
+  PROJECTS.map(({ image, title, description, tags, link , github }) => (
     <article class="pb-11">
       <h3 class="text-2xl font-semibold text-violet-500 mb-2">{title}</h3>
       <p class="text-lg mb-4 text-pretty">{description}</p>
@@ -131,13 +132,14 @@ const PROJECTS = [
         src={image}
         alt={`Captura de pantalla del proyecto ${image}`}
       />
-      <footer>
-        <LinkButton>
-        <GitHubIcon/>
+      <footer class="flex gap-x-4">
+        <LinkButton href={github}>
+        <GitHubIcon class="size-4 md:size-6" />
         Ver codigo Fuente
         </LinkButton>
         
-        <LinkButton> 
+        <LinkButton href={link}>
+        <LinkIcon class="size-4 md:size-6"/>
         Ir al citio
         </LinkButton>
       </footer>
