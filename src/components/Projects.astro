@@ -108,42 +108,46 @@ const PROJECTS = [
 ];
 ---
 <section class="flex flex-col gap-y-16">
-{
-  PROJECTS.map(({ image, title, description, tags, link , github }) => (
-    <article class="pb-11">
-      <h3 class="text-2xl font-semibold text-violet-500 mb-2">{title}</h3>
-      <p class="text-lg mb-4 text-pretty">{description}</p>
-      <ul class="flex flex-wrap gap-x-2 mb-2">
-  {tags.map((tag) => (
-    <li class="mb-2"> 
-      <span
-        class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-3`}
-      >
-        <tag.icon class="size-4" />
-        {tag.name}
-      </span>
-    </li>
-  ))}
-</ul>
+  {
+    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+      <article class="bg-transparent rounded-xl shadow-lg border border-gray-800 p-8">
+        <h3 class="text-2xl font-semibold text-purple-400 mb-2">{title}</h3>
+        <p class="text-sm md:text-lg mb-4 text-pretty">{description}</p>
+        <ul class="flex flex-wrap gap-x-2 mb-4">
+          {tags.map((tag) => (
+            <li class="mb-2"> 
+              <span
+                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-3`}
+              >
+                <tag.icon class="size-4" />
+                {tag.name}
+              </span>
+            </li>
+          ))}
+        </ul>
 
-      <img
-        class="rounded shadow-2xl shadow-white/10 "
-        src={image}
-        alt={`Captura de pantalla del proyecto ${image}`}
-      />
-      <footer class="flex gap-x-4 items-end justify-start mt-4">
-      {github && (<LinkButton href={github}>
-        <GitHubIcon class="size-4 md:size-6" />
-        Ver codigo Fuente
-        </LinkButton>
-        )} 
-        {link &&(<LinkButton href={link}>
-        <LinkIcon class="size-4 md:size-6"/>
-        Ir al citio
-        </LinkButton>
-         )}
-      </footer>
-    </article>
-  ))
-}
-<section/>
+        <img
+          class="rounded-xl shadow-2xl shadow-purple-900 mb-6"
+          src={image}
+          alt={`Captura de pantalla del proyecto ${title}`}
+        />
+
+        <footer class="flex gap-x-4 items-end justify-start mt-4">
+          {github && (
+            <LinkButton href={github}>
+              <GitHubIcon class="size-4 md:size-6" />
+              Ver código fuente
+            </LinkButton>
+          )}
+          {link && (
+            <LinkButton href={link}>
+              <LinkIcon class="size-4 md:size-6"/>
+              Ir al sitio
+            </LinkButton>
+          )}
+        </footer>
+      </article>
+    ))
+  }
+</section>
+
