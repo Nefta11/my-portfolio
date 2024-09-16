@@ -11,7 +11,7 @@ import StripeIcon from "@/components/Icons/StripeIcon.astro";
 import SlimPHPIcon from "@/components/Icons/SlimIcon.astro";
 import LinkButton from "@/components/LinkButton.astro";
 import GitHubIcon from "@/components/Icons/GitHubIcon.astro";
-import LinkIcon from "@/components/Icons/LinkIcon.astro"
+import LinkIcon from "@/components/Icons/LinkIcon.astro";
 import IconoDeCss from "./Icons/IconoDeCss.astro";
 const TAGS = {
   Php: {
@@ -96,20 +96,16 @@ const PROJECTS = [
       TAGS.SlimPHP,
     ],
   },
-  
+
   {
-  title: "App MusicForYou",
-  description: "Desarrollo de una aplicación móvil llamada MusicForYou enfocada en la creación y gestión de contenido musical. Utilicé React Native para desarrollar la interfaz y Slim PHP para crear una API que gestiona las operaciones del backend. Los usuarios pueden registrarse y autenticarse, lo que les permite crear y gestionar sus propias canciones, letras, artistas y géneros musicales. La aplicación ofrece una experiencia intuitiva con navegación sencilla, facilitando la gestión musical personalizada. MySQL se utilizó para el almacenamiento de los datos, mientras que Postman fue clave para probar y documentar las APIs creadas, garantizando una integración efectiva entre el frontend y el backend.",
-  github: "https://github.com/Nefta11/AppMusicForYou",
-  image: "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/MusicForYou.png",
-  tags: [
-    TAGS.Node,
-    TAGS.react,
-    TAGS.Mysql,
-    TAGS.SlimPHP,
-    TAGS.Postman
-  ]
-},
+    title: "App MusicForYou",
+    description:
+      "Desarrollo de una aplicación móvil llamada MusicForYou enfocada en la creación y gestión de contenido musical. Utilicé React Native para desarrollar la interfaz y Slim PHP para crear una API que gestiona las operaciones del backend. Los usuarios pueden registrarse y autenticarse, lo que les permite crear y gestionar sus propias canciones, letras, artistas y géneros musicales. La aplicación ofrece una experiencia intuitiva con navegación sencilla, facilitando la gestión musical personalizada. MySQL se utilizó para el almacenamiento de los datos, mientras que Postman fue clave para probar y documentar las APIs creadas, garantizando una integración efectiva entre el frontend y el backend.",
+    github: "https://github.com/Nefta11/AppMusicForYou",
+    image:
+      "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/MusicForYou.png",
+    tags: [TAGS.Node, TAGS.react, TAGS.Mysql, TAGS.SlimPHP, TAGS.Postman],
+  },
 
   {
     title: "Gran Bazar",
@@ -122,6 +118,7 @@ const PROJECTS = [
   },
 ];
 ---
+
 <section class="flex flex-col gap-y-16">
   {
     PROJECTS.map(({ image, title, description, tags, link, github }) => (
@@ -130,7 +127,7 @@ const PROJECTS = [
         <p class="text-sm md:text-lg mb-4 text-pretty">{description}</p>
         <ul class="flex flex-wrap gap-x-2 mb-4">
           {tags.map((tag) => (
-            <li class="mb-2"> 
+            <li class="mb-2">
               <span
                 class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-3`}
               >
@@ -146,17 +143,16 @@ const PROJECTS = [
           src={image}
           alt={`Captura de pantalla del proyecto ${title}`}
         />
-
         <footer class="flex gap-x-4 items-end justify-start mt-4">
           {github && (
-            <LinkButton href={github}>
+            <LinkButton href={github} target="_blank">
               <GitHubIcon class="size-4 md:size-6" />
               Ver código
             </LinkButton>
           )}
           {link && (
-            <LinkButton href={link}>
-              <LinkIcon class="size-4 md:size-6"/>
+            <LinkButton href={link} target="_blank">
+              <LinkIcon class="size-4 md:size-6" />
               Ir al sitio
             </LinkButton>
           )}
@@ -165,4 +161,3 @@ const PROJECTS = [
     ))
   }
 </section>
-
