@@ -1,109 +1,178 @@
 ---
-import SlimIcon from "./Icons/SlimIcon.astro"
-import HtmlIcon from "./Icons/HtmlIcon.astro"
-import IconoDeCss from "./Icons/IconoDeCss.astro"
-import JavaScriptIcon from "./Icons/JavaScriptIcon.astro"
-import ReactIcon from "./Icons/ReactIcon.astro"
-import AstroIcon from "./Icons/AstroIcon.astro"
-import LaravelIcon from "./Icons/LaravelIcon.astro"
-import MysqlIcon from "./Icons/MysqlIcon.astro"
-import MongoDBIcon from "./Icons/MongoDBIcon.astro"
-
+import SlimIcon from "./Icons/SlimIcon.astro";
+import HtmlIcon from "./Icons/HtmlIcon.astro";
+import IconoDeCss from "./Icons/IconoDeCss.astro";
+import JavaScriptIcon from "./Icons/JavaScriptIcon.astro";
+import ReactIcon from "./Icons/ReactIcon.astro";
+import AstroIcon from "./Icons/AstroIcon.astro";
+import LaravelIcon from "./Icons/LaravelIcon.astro";
+import MysqlIcon from "./Icons/MysqlIcon.astro";
+import MongoDBIcon from "./Icons/MongoDBIcon.astro";
+import NodeIcon from "./Icons/NodeIcon.astro";
+import DJangoIcon from "./Icons/DJangoIcon.astro";
+import NestJSIcon from "./Icons/NestJSIcon.astro";
+import AWSIcon from "./Icons/AWSIcon.astro";
+import GitHubIcon from "./Icons/GitHubIcon.astro";
+import GitIcon from "./Icons/GitIcon.astro";
+import UbuntuIcon from "./Icons/UbuntuIcon.astro";
+import ExpoIcon from "./Icons/ExpoIcon.astro";
+import PostmanIcon from "./Icons/PostmanIcon.astro";
+import YarnIcon from "./Icons/YarnIcon.astro";
+import NpmIcon from "./Icons/NpmIcon.astro";
+import TailwindCssIcon from "./Icons/TailwindCssIcon.astro";
+import BoostrapIcon from "./Icons/BoostrapIcon.astro";
+import VSCIcon from "./Icons/VSCIcon.astro";
 ---
 
+<section class="text-white p-4">
+  <!-- Texto introductorio -->
+  <p class="mb-8 text-base lg:text-xl">
+    Durante mi viaje en este mundo del desarrollo de software, he cultivado experiencia y habilidades en una variedad de tecnologías, algunas por gusto y otras por necesidad para proyectos. Mi stack incluye algunas:
+  </p>
 
-<div class="grid grid-cols-2 gap-4 text-white">
-    <div class="bg-transparent p-6 border border-gray-700 rounded-lg">
-        <h3 class="text-2xl font-semibold mb-4">Frontend</h3>
-        <div class="grid grid-cols-3 gap-4">
-            <div class="flex flex-col items-center">
-                <HtmlIcon class="w-12 h-12 mb-2" />
-                <span>HTML</span>
-            </div>
-            <div class="flex flex-col items-center">
-                <IconoDeCss class="w-12 h-12 mb-2" />
-                <span>CSS</span>
-            </div>
-            <div class="flex flex-col items-center">
-                <JavaScriptIcon  class="w-12 h-12 mb-2" />
-                <span>JavaScript</span>
-            </div>
-            <div class="flex flex-col items-center">
-              <ReactIcon class="w-12 h-12 mb-2" />
-              <span>React-Native</span>
-          </div>
-          <div class="flex flex-col items-center">
-            <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/React-Light.svg" alt="React" class="w-12 h-12 mb-2" />
-            <span>React</span>
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
+    <!-- Frontend -->
+    <div class="bg-transparent p-4 border border-gray-700 rounded-lg">
+      <h3 class="text-xl font-semibold text-center text-yellow-200/90 mb-6">
+        Frontend
+      </h3>
+      <div class="flex flex-wrap justify-center gap-4">
+        <div class="flex flex-col items-center">
+          <HtmlIcon class="size-8 md:size-10 mb-2" />
+          <span class="text-xs lg:text-base">HTML</span>
         </div>
         <div class="flex flex-col items-center">
-          <AstroIcon class="w-12 h-12 mb-2" />
-          <span>Astro</span>
+          <IconoDeCss class="size-8 md:size-10 mb-2" />
+          <span class="text-xs lg:text-base">CSS</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <JavaScriptIcon class="size-8 md:size-10 mb-2" />
+          <span class="text-xs lg:text-base">JavaScript</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <ReactIcon class="size-8 md:size-10 mb-2" />
+          <span class="text-xs lg:text-base">React Native</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img
+            src="https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/React-Light.svg"
+            alt="React"
+            class="size-8 md:size-10 mb-2"
+          />
+          <span class="text-xs lg:text-base">ReactJS</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <AstroIcon class="size-8 md:size-10 mb-2" />
+          <span class="text-xs lg:text-base">Astro</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <TailwindCssIcon class="size-8 md:size-10 mb-2" />
+          <span class="text-xs lg:text-base">TailwindCSS</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <BoostrapIcon class="size-8 md:size-10 mb-2" />
+          <span class="text-xs lg:text-base">Bootstrap</span>
+        </div>
       </div>
-        </div>
     </div>
 
-    <div class="bg-transparent p-6 border border-gray-700 rounded-lg">
-        <h3 class="text-2xl font-semibold mb-4">Backend</h3>
-        <div class="grid grid-cols-3 gap-4">
-            <div class="flex flex-col items-center">
-                <SlimIcon class="w-12 h-12 mb-2" />
-                <span>SlimPHP</span>
-            </div>
-            <div class="flex flex-col items-center">
-                <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/ExpressJS-Dark.svg" alt="Node.js" class="w-12 h-12 mb-2" />
-                <span>Express</span>
-            </div>
-            <div class="flex flex-col items-center">
-                <LaravelIcon class="w-12 h-12 mb-2" />
-                <span>Laravel</span>
-            </div>
-            <div class="flex flex-col items-center">
-              <MysqlIcon class="w-12 h-12 mb-2" />
-              <span>Mysql</span>
-          </div>
-          <div class="flex flex-col items-center">
-            <MongoDBIcon class="w-12 h-12 mb-2" />
-            <span>Mongo DB</span>
+    <!-- Backend -->
+    <div class="bg-transparent p-4 border border-gray-700 rounded-lg">
+      <h3 class="text-xl font-semibold text-center text-yellow-200/90 mb-6">
+        Backend
+      </h3>
+      <div class="flex flex-wrap justify-center gap-4">
+        <div class="flex flex-col items-center">
+          <SlimIcon class="size-8 md:size-10 mb-2" />
+          <span class="text-xs lg:text-base">Slim PHP</span>
         </div>
+        <div class="flex flex-col items-center">
+          <img
+            src="https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/ExpressJS-Dark.svg"
+            alt="Node.js"
+            class="size-8 md:size-10 mb-2"
+          />
+          <span class="text-xs lg:text-base">Express</span>
         </div>
+        <div class="flex flex-col items-center">
+          <LaravelIcon class="size-8 md:size-10 mb-2" />
+          <span class="text-xs lg:text-base">Laravel</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <MysqlIcon class="size-8 md:size-10 mb-2" />
+          <span class="text-xs lg:text-base">Mysql</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <MongoDBIcon class="size-8 md:size-10 mb-2" />
+          <span class="text-xs lg:text-base">MongoDB</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <NodeIcon class="size-8 md:size-10 mb-2" />
+          <span class="text-xs lg:text-base">Node.js</span>
+        </div>
+      </div>
     </div>
 
-    <div class="bg-transparent p-6 border border-gray-700 rounded-lg">
-        <h3 class="text-2xl font-semibold mb-4">Aprendiendo</h3>
-        <div class="grid grid-cols-3 gap-4">
-            <div class="flex flex-col items-center">
-                <img src="/path/to/python-icon.svg" alt="Python" class="w-12 h-12 mb-2" />
-                <span>Python</span>
-            </div>
-            <div class="flex flex-col items-center">
-                <img src="/path/to/astro-icon.svg" alt="Astro" class="w-12 h-12 mb-2" />
-                <span>Astro</span>
-            </div>
-            <div class="flex flex-col items-center">
-                <img src="/path/to/docker-icon.svg" alt="Docker" class="w-12 h-12 mb-2" />
-                <span>Docker</span>
-            </div>
-            <!-- Añade más tecnologías que estás aprendiendo aquí -->
+    <!-- Aprendiendo -->
+    <div class="bg-transparent p-5 border border-gray-700 rounded-lg">
+      <h3 class="text-xl font-semibold text-center text-yellow-200/90 mb-6">
+        Aprendiendo
+      </h3>
+      <div class="flex flex-wrap justify-center gap-4">
+        <div class="flex flex-col items-center">
+          <NestJSIcon class="size-8 md:size-10 mb-2" />
+          <span class="text-xs lg:text-base">Nest.js</span>
         </div>
+        <div class="flex flex-col items-center">
+          <DJangoIcon class="size-8 md:size-10 mb-2" />
+          <span class="text-xs lg:text-base">Django</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <AWSIcon class="size-8 md:size-10 mb-2" />
+          <span class="text-xs lg:text-base">AWS</span>
+        </div>
+      </div>
     </div>
 
-    <div class="bg-transparent p-6 border border-gray-700 rounded-lg">
-        <h3 class="text-2xl font-semibold mb-4">Herramientas</h3>
-        <div class="grid grid-cols-3 gap-4">
-            <div class="flex flex-col items-center">
-                <img src="/path/to/git-icon.svg" alt="Git" class="w-12 h-12 mb-2" />
-                <span>Git</span>
-            </div>
-            <div class="flex flex-col items-center">
-                <img src="/path/to/github-icon.svg" alt="GitHub" class="w-12 h-12 mb-2" />
-                <span>GitHub</span>
-            </div>
-            <div class="flex flex-col items-center">
-                <img src="/path/to/terminal-icon.svg" alt="Terminal" class="w-12 h-12 mb-2" />
-                <span>Terminal</span>
-            </div>
-            <!-- Añade más herramientas aquí -->
+    <!-- Herramientas -->
+    <div class="bg-transparent p-5 border border-gray-700 rounded-lg">
+      <h3 class="text-xl font-semibold text-center text-yellow-200/90 mb-6">
+        Herramientas
+      </h3>
+      <div class="flex flex-wrap justify-center gap-4">
+        <div class="flex flex-col items-center">
+          <GitIcon class="size-8 md:size-10 mb-2" />
+          <span class="text-xs lg:text-base">Git</span>
         </div>
+        <div class="flex flex-col items-center">
+          <GitHubIcon class="size-8 md:size-10 mb-2" />
+          <span class="text-xs lg:text-base">GitHub</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <NpmIcon class="size-8 md:size-10 mb-2" />
+          <span class="text-xs lg:text-base">NPM</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <UbuntuIcon class="size-8 md:size-10 mb-2" />
+          <span class="text-xs lg:text-base">Ubuntu</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <PostmanIcon class="size-8 md:size-10 mb-2" />
+          <span class="text-xs lg:text-base">Postman</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <YarnIcon class="size-8 md:size-10 mb-2" />
+          <span class="text-xs lg:text-base">Yarn</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <ExpoIcon class="size-8 md:size-10 mb-2" />
+          <span class="text-xs lg:text-base">Expo Go</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <VSCIcon class="size-8 md:size-10 mb-2" />
+          <span class="text-xs lg:text-base">Visual Studio Code</span>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
+</section>
