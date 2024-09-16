@@ -13,6 +13,12 @@ import LinkButton from "@/components/LinkButton.astro";
 import GitHubIcon from "@/components/Icons/GitHubIcon.astro";
 import LinkIcon from "@/components/Icons/LinkIcon.astro";
 import IconoDeCss from "./Icons/IconoDeCss.astro";
+import AstroIcon from "@/components/Icons/AstroIcon.astro"
+import TailwindCssIcon from "@/components/Icons/TailwindCssIcon.astro"
+import YarnIcon from "@/components/Icons/YarnIcon.astro"
+import NpmIcon from "@/components/Icons/NpmIcon.astro"
+import SvgIcon from "@/components/Icons/SvglIcon.astro"
+import VercelIcon from "@/components/Icons/VercelIcon.astro"
 
 
 const TAGS = {
@@ -77,6 +83,36 @@ const TAGS = {
     class: "bg-gradient-to-r from-gray-800 via-gray-700 to-gray-600 text-white",
     icon: SlimPHPIcon,
   },
+  Astro: {
+    name: "Astro",
+    class: "bg-gradient-to-r from-teal-400/40 to-blue-600/40 text-white",
+    icon: AstroIcon,
+  },
+  TailwindCSS: {
+    name: "Tailwind CSS",
+    class: "bg-gradient-to-r from-blue-400/40 to-green-600/40 text-white",
+    icon: TailwindCssIcon,
+  },
+  Yarn: {
+    name: "Yarn",
+    class: "bg-gradient-to-r from-indigo-400/40 to-blue-600/40 text-white",
+    icon: YarnIcon,
+  },
+  Npm: {
+    name: "NPM",
+    class: "bg-gradient-to-r from-red-400/40 to-red-600/40 text-white",
+    icon: NpmIcon,
+  },
+  Svg: {
+    name: "SVG",
+    class: "bg-gradient-to-r from-gray-400/40 to-gray-600/40 text-white",
+    icon: SvgIcon,
+  },
+  Vercel: {
+    name: "Vercel",
+    class: "bg-gradient-to-r from-black/40 to-gray-800/40 text-white",
+    icon: VercelIcon,
+  },
 };
 
 const PROJECTS = [
@@ -96,6 +132,7 @@ const PROJECTS = [
       TAGS.Expo,
       TAGS.Postman,
       TAGS.SlimPHP,
+      TAGS.Yarn
     ],
   },
 
@@ -106,7 +143,7 @@ const PROJECTS = [
   github: "https://github.com/Nefta11/my-portfolio",
   link: "",
   image: "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/PortafolioNefta.png",
-  tags: [TAGS.JavaScript]
+  tags: [TAGS.JavaScript, TAGS.Astro, TAGS.TailwindCSS, TAGS.Npm, TAGS.Vercel, TAGS.Svg]
 },
 
   {
@@ -116,7 +153,7 @@ const PROJECTS = [
     github: "https://github.com/Nefta11/AppMusicForYou",
     image:
       "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/MusicForYou.png",
-    tags: [TAGS.Node, TAGS.react, TAGS.Mysql, TAGS.SlimPHP, TAGS.Postman],
+    tags: [TAGS.Node, TAGS.react, TAGS.Mysql, TAGS.SlimPHP, TAGS.Postman, TAGS.Yarn],
   },
 
   {
