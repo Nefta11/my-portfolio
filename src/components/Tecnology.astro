@@ -1,21 +1,45 @@
+---
+import SlimIcon from "./Icons/SlimIcon.astro"
+import HtmlIcon from "./Icons/HtmlIcon.astro"
+import IconoDeCss from "./Icons/IconoDeCss.astro"
+import JavaScriptIcon from "./Icons/JavaScriptIcon.astro"
+import ReactIcon from "./Icons/ReactIcon.astro"
+import AstroIcon from "./Icons/AstroIcon.astro"
+import LaravelIcon from "./Icons/LaravelIcon.astro"
+import MysqlIcon from "./Icons/MysqlIcon.astro"
+import MongoDBIcon from "./Icons/MongoDBIcon.astro"
+
+---
+
 
 <div class="grid grid-cols-2 gap-4 text-white">
     <div class="bg-transparent p-6 border border-gray-700 rounded-lg">
         <h3 class="text-2xl font-semibold mb-4">Frontend</h3>
         <div class="grid grid-cols-3 gap-4">
             <div class="flex flex-col items-center">
-                <img src="/path/to/html-icon.svg" alt="HTML" class="w-12 h-12 mb-2" />
+                <HtmlIcon class="w-12 h-12 mb-2" />
                 <span>HTML</span>
             </div>
             <div class="flex flex-col items-center">
-                <img src="/path/to/css-icon.svg" alt="CSS" class="w-12 h-12 mb-2" />
+                <IconoDeCss class="w-12 h-12 mb-2" />
                 <span>CSS</span>
             </div>
             <div class="flex flex-col items-center">
-                <img src="/path/to/js-icon.svg" alt="JavaScript" class="w-12 h-12 mb-2" />
+                <JavaScriptIcon  class="w-12 h-12 mb-2" />
                 <span>JavaScript</span>
             </div>
-            <!-- Añade más tecnologías frontend aquí -->
+            <div class="flex flex-col items-center">
+              <ReactIcon class="w-12 h-12 mb-2" />
+              <span>React-Native</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/React-Light.svg" alt="React" class="w-12 h-12 mb-2" />
+            <span>React</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <AstroIcon class="w-12 h-12 mb-2" />
+          <span>Astro</span>
+      </div>
         </div>
     </div>
 
@@ -23,18 +47,25 @@
         <h3 class="text-2xl font-semibold mb-4">Backend</h3>
         <div class="grid grid-cols-3 gap-4">
             <div class="flex flex-col items-center">
-                <img src="/path/to/php-icon.svg" alt="PHP" class="w-12 h-12 mb-2" />
-                <span>PHP</span>
+                <SlimIcon class="w-12 h-12 mb-2" />
+                <span>SlimPHP</span>
             </div>
             <div class="flex flex-col items-center">
-                <img src="/path/to/nodejs-icon.svg" alt="Node.js" class="w-12 h-12 mb-2" />
-                <span>Node.js</span>
+                <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/ExpressJS-Dark.svg" alt="Node.js" class="w-12 h-12 mb-2" />
+                <span>Express</span>
             </div>
             <div class="flex flex-col items-center">
-                <img src="/path/to/laravel-icon.svg" alt="Laravel" class="w-12 h-12 mb-2" />
+                <LaravelIcon class="w-12 h-12 mb-2" />
                 <span>Laravel</span>
             </div>
-            <!-- Añade más tecnologías backend aquí -->
+            <div class="flex flex-col items-center">
+              <MysqlIcon class="w-12 h-12 mb-2" />
+              <span>Mysql</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <MongoDBIcon class="w-12 h-12 mb-2" />
+            <span>Mongo DB</span>
+        </div>
         </div>
     </div>
 
