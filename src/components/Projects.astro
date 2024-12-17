@@ -129,7 +129,8 @@ const TAGS = {
 const PROJECTS = [
   {
     title: "App móvil XicoNemi",
-    description: "Como parte del proyecto XicoNemi, mi responsabilidad fue desarrollar la aplicación móvil utilizando React Native y ejecutada en Expo. La app está diseñada para promover el turismo en Xicotepec, ofreciendo itinerarios personalizados, rutas de senderismo y ciclismo, además de destacar actividades de ecoturismo. Implementé Redux para la gestión del estado global y React Navigation para la navegación entre pantallas, siguiendo una estructura modular basada en funcionalidades y dominios para garantizar escalabilidad y fácil mantenimiento. La aplicación consume APIs desarrolladas en nuestro backend para funciones clave como registro, inicio de sesión y obtención de datos turísticos, entre otras muchas más. El proyecto soporta múltiples idiomas (español e inglés), lo que amplía su alcance a un público internacional. Aunque la aplicación sigue en desarrollo debido a la magnitud del proyecto, su objetivo es ofrecer una experiencia única y personalizada para los turistas interesados en explorar Xicotepec.",
+    description:
+      "Como parte del proyecto XicoNemi, mi responsabilidad fue desarrollar la aplicación móvil utilizando React Native y ejecutada en Expo. La app está diseñada para promover el turismo en Xicotepec, ofreciendo itinerarios personalizados, rutas de senderismo y ciclismo, además de destacar actividades de ecoturismo. Implementé Redux para la gestión del estado global y React Navigation para la navegación entre pantallas, siguiendo una estructura modular basada en funcionalidades y dominios para garantizar escalabilidad y fácil mantenimiento. La aplicación consume APIs desarrolladas en nuestro backend para funciones clave como registro, inicio de sesión y obtención de datos turísticos, entre otras muchas más. El proyecto soporta múltiples idiomas (español e inglés), lo que amplía su alcance a un público internacional. Aunque la aplicación sigue en desarrollo debido a la magnitud del proyecto, su objetivo es ofrecer una experiencia única y personalizada para los turistas interesados en explorar Xicotepec.",
     github: "https://github.com/XicoNemi/mobile-app/tree/dev",
     link: "",
     image:
@@ -142,7 +143,7 @@ const PROJECTS = [
       TAGS.Expo,
       TAGS.Postman,
       TAGS.Yarn,
-      TAGS.Prisma
+      TAGS.Prisma,
     ],
   },
   {
@@ -153,6 +154,7 @@ const PROJECTS = [
     link: "",
     image:
       "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/UltraTrailBoletos.png",
+      image2:"",
     tags: [
       TAGS.react,
       TAGS.Node,
@@ -214,45 +216,54 @@ const PROJECTS = [
 
 <section class="flex flex-col gap-y-16">
   {
-    PROJECTS.map(({ image, title, description, tags, link, github }) => (
-      <article class="bg-transparent rounded-xl shadow-lg border border-violet-800 p-8">
-        <h3 class="text-2xl font-semibold text-purple-400 mb-2">{title}</h3>
-        <p class="text-white text-sm md:text-lg mb-4 text-pretty">
-          {description}
-        </p>
-        <ul class="flex flex-wrap gap-x-2 mb-4">
-          {tags.map((tag) => (
-            <li class="mb-2">
-              <span
-                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-3`}
-              >
-                <tag.icon class="size-4" />
-                {tag.name}
-              </span>
-            </li>
-          ))}
-        </ul>
+    PROJECTS.map(
+      ({ image, image2, title, description, tags, link, github }) => (
+        <article class="bg-transparent rounded-xl shadow-lg border border-violet-800 p-8">
+          <h3 class="text-2xl font-semibold text-purple-400 mb-2">{title}</h3>
+          <p class="text-white text-sm md:text-lg mb-4 text-pretty">
+            {description}
+          </p>
+          <ul class="flex flex-wrap gap-x-2 mb-4">
+            {tags.map((tag) => (
+              <li class="mb-2">
+                <span
+                  class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-3`}
+                >
+                  <tag.icon class="size-4" />
+                  {tag.name}
+                </span>
+              </li>
+            ))}
+          </ul>
 
-        <img
-          class="rounded-xl shadow-2xl shadow-purple-900 mb-6"
-          src={image}
-          alt={`Captura de pantalla del proyecto ${title}`}
-        />
-        <footer class="flex gap-x-4 items-end justify-start mt-4">
-          {github && (
-            <LinkButton class="text-white" href={github} target="_blank">
-              <GitHubIcon class="size-4 md:size-6 text-white" />
-              <span class="text-white">Ver código</span>
-            </LinkButton>
+          <img
+            class="rounded-xl shadow-2xl shadow-purple-900 mb-6"
+            src={image}
+            alt={`Captura de pantalla del proyecto ${title}`}
+          />
+          {image2 && (
+            <img
+              class="rounded-xl shadow-2xl shadow-purple-900 mb-6"
+              src={image2}
+              alt={`Captura de pantalla adicional del proyecto ${title}`}
+            />
           )}
-          {link && (
-            <LinkButton class="text-white" href={link} target="_blank">
-              <LinkIcon class="size-4 md:size-6 text-white" />
-              <span class="text-white">Ir al sitio</span>
-            </LinkButton>
-          )}
-        </footer>
-      </article>
-    ))
+          <footer class="flex gap-x-4 items-end justify-start mt-4">
+            {github && (
+              <LinkButton class="text-white" href={github} target="_blank">
+                <GitHubIcon class="size-4 md:size-6 text-white" />
+                <span class="text-white">Ver código</span>
+              </LinkButton>
+            )}
+            {link && (
+              <LinkButton class="text-white" href={link} target="_blank">
+                <LinkIcon class="size-4 md:size-6 text-white" />
+                <span class="text-white">Ir al sitio</span>
+              </LinkButton>
+            )}
+          </footer>
+        </article>
+      )
+    )
   }
 </section>
