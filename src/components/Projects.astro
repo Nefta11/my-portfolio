@@ -20,6 +20,7 @@ import NpmIcon from "@/components/Icons/NpmIcon.astro";
 import SvgIcon from "@/components/Icons/SvglIcon.astro";
 import VercelIcon from "@/components/Icons/VercelIcon.astro";
 import ReduxIcon from "@/components/Icons/ReduxIcon.astro";
+import PrismaIcon from "@/components/Icons/PrismaIcon.astro";
 
 const TAGS = {
   Php: {
@@ -118,16 +119,21 @@ const TAGS = {
     class: "bg-gradient-to-r from-purple-400/40 to-purple-600/40 text-white",
     icon: ReduxIcon,
   },
+  Prisma: {
+    name: "Prisma",
+    class: "bg-gradient-to-r from-gray-400/40 to-gray-600/40 text-white",
+    icon: PrismaIcon,
+  },
 };
 
 const PROJECTS = [
   {
-    title: "XicoNemi",
-    description: "",
+    title: "App móvil XicoNemi",
+    description: "Como parte del proyecto XicoNemi, mi responsabilidad fue desarrollar la aplicación móvil utilizando React Native y ejecutada en Expo. La app está diseñada para promover el turismo en Xicotepec, ofreciendo itinerarios personalizados, rutas de senderismo y ciclismo, además de destacar actividades de ecoturismo. Implementé Redux para la gestión del estado global y React Navigation para la navegación entre pantallas, siguiendo una estructura modular basada en funcionalidades y dominios para garantizar escalabilidad y fácil mantenimiento. La aplicación consume APIs desarrolladas en nuestro backend para funciones clave como registro, inicio de sesión y obtención de datos turísticos, entre otras muchas más. El proyecto soporta múltiples idiomas (español e inglés), lo que amplía su alcance a un público internacional. Aunque la aplicación sigue en desarrollo debido a la magnitud del proyecto, su objetivo es ofrecer una experiencia única y personalizada para los turistas interesados en explorar Xicotepec.",
     github: "https://github.com/XicoNemi/mobile-app/tree/dev",
     link: "",
     image:
-      "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/UltraTrailBoletos.png",
+      "",
     tags: [
       TAGS.Node,
       TAGS.react,
@@ -136,10 +142,11 @@ const PROJECTS = [
       TAGS.Expo,
       TAGS.Postman,
       TAGS.Yarn,
+      TAGS.Prisma
     ],
   },
   {
-    title: "Ultra Trail(Modulo Boletos)",
+    title: "App móvil Ultra Trail(Modulo Boletos)",
     description:
       "Desarrollo del módulo de métodos de pago y compra de boletos para la aplicación Ultra Trail, enfocada en carreras de montaña. Maqueté y desarrollé interfaces en React Native ejecutadas en Expo, creando pantallas para métodos de pago, compra de boletos, carrito de compras y visualización de boletos. Stripe fue implementado para la gestión segura de pagos. Node.js se utilizó para la configuración del entorno y ejecución del código JavaScript en React. Desarrollé y consumí APIs con Slim PHP para manejar transacciones y la gestión de boletos, utilizando MySQL para el almacenamiento de datos. Postman se utilizó para la prueba y documentación de las APIs creadas, asegurando su correcto funcionamiento y facilitando la integración del backend con el frontend.",
     github: "https://github.com/UltraHuauchi?tab=repositories",
