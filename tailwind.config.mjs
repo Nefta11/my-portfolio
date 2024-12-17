@@ -6,6 +6,7 @@ export default {
         extend: {
             maskImage: {
                 'gradient-black-transparent': 'linear-gradient(black 80%, transparent)',
+                'gradient-left-right': 'linear-gradient(to right, transparent, black 80%, transparent)',
             },
         },
     },
@@ -15,7 +16,16 @@ export default {
                 '.mask-gradient-black-transparent': {
                     maskImage: 'linear-gradient(black 75%, transparent)',
                 },
+                '.mask-gradient-left-right': {
+                    maskImage: 'linear-gradient(to right, transparent, black 80%, transparent)',
+                },
+                '.mask-gradient-all-sides': {
+                    maskImage:
+                        'linear-gradient(to right, transparent, black 80%, transparent), linear-gradient(black 75%, transparent)',
+                    maskComposite: 'intersect',
+                    WebkitMaskComposite: 'destination-in',
+                },
             });
         },
     ],
-}
+};
