@@ -1,96 +1,117 @@
 ---
-import Badge from "@/components/Badge.astro"
-import Layout from "@/layouts/Layout.astro"
-import LinkeIndIcon from "@/components/Icons/LinkeInd.astro"
-import SocialPill from "@/components/SocialPill.astro" 
-import GitHubIcon from "@/components/Icons/GitHubIcon.astro"
-import MailIcon from "@/components/Icons/MailIcon.astro"
-import Experiences from "@/components/Experiences.astro"
-import SectionContainer from "@/components/SectionContainer.astro"
-import Briefcase from "@/components/Icons/Briefcase.astro"
-import Code from "@/components/Icons/Code.astro"
-import Projects from "@/components/Projects.astro"
-import ProfileCheck from "@/components/Icons/ProfileCheck.astro"
-import AboutMe from "@/components/AboutMe.astro"
-import TecnologyIcon from "@/components/Icons/TecnologyIcon .astro"
-import Tecnology from "@/components/Tecnology.astro"
+import Badge from "@/components/Badge.astro";
+import Layout from "@/layouts/Layout.astro";
+import LinkeIndIcon from "@/components/Icons/LinkeInd.astro";
+import SocialPill from "@/components/SocialPill.astro";
+import GitHubIcon from "@/components/Icons/GitHubIcon.astro";
+import MailIcon from "@/components/Icons/MailIcon.astro";
+import Experiences from "@/components/Experiences.astro";
+import SectionContainer from "@/components/SectionContainer.astro";
+import Briefcase from "@/components/Icons/Briefcase.astro";
+import Code from "@/components/Icons/Code.astro";
+import Projects from "@/components/Projects.astro";
+import ProfileCheck from "@/components/Icons/ProfileCheck.astro";
+import AboutMe from "@/components/AboutMe.astro";
+import TecnologyIcon from "@/components/Icons/TecnologyIcon .astro";
+import Tecnology from "@/components/Tecnology.astro";
 ---
-<Layout 
-title="Portafolio Neftali desarrollador fullstack jr"
-description="Contrata a neftali para el desarrollo de software te aportara demasiado a tu proyecto">
-<main class="px-4">
-  <SectionContainer class="py-24 pb-32">
-    <img 
-    class="rounded-full size-52 mb-5" 
-    src="https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/Photo1Nefta.jpg" 
-    alt="Neftali foto" 
-  />
-  <h1 
-  class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex 
-  flex-row gap-x-4 pb-6 lg:pb-10">
-    Hola, ¡Soy Neftali!<a 
-    href="https://www.linkedin.com/in/neftali-arturo-hern%C3%A1ndez-vergara-9996a8229/"
-    target="_blank"
-    rel="noopener"
-    class="flex justify-center items-center text-center hover:scale-105 transition"
-  >
-    <Badge class="text-center">Preparado para aportar</Badge>
-  </a>
-  
-  </h1>
-  <h2 class="text-white text-xl lg:text-2xl text-wrap max-w-[700px]">
-    <span class="text-white">Técnico Superior Universitario en Tecnologías de la Información área Desarrollo de Software Multiplataforma.</span> 
-    <span class="text-yellow-200/90">Desarrollador Full Stack Jr.</span>
-    <span class="text-red-200/90">De Puebla, Mexico 🇲🇽.</span>
-    <span class="text-white opacity-85">Con más de 1 año de experiencia en desarrollo backend y conocimientos en diseño y maquetación frontend.</span>
-  </h2>
 
-    <nav class="flex gap-4 mt-8 flex-wrap">
-      <SocialPill href="https://github.com/Nefta11">
-        <GitHubIcon class="size-4 md:size-6"/>
-        <span class="text-white">GitHub</span>
-      </SocialPill>
-      <SocialPill href="https://www.linkedin.com/in/neftali-arturo-hern%C3%A1ndez-vergara-9996a8229/">
-        <LinkeIndIcon class="size-4 md:size-6"/>
-        <span class="text-white">LinkedIn</span>
-      </SocialPill>
-      <SocialPill href="mailto:neftaliarturoherandez@gmail.com">
-        <MailIcon class="size-4 lg:size-6"/>
-        <span class="text-white">neftaliarturoherandez@gmail.com</span>
-      </SocialPill>
-    </nav>
+<Layout
+  title="Portafolio Neftali desarrollador fullstack jr"
+  description="Contrata a neftali para el desarrollo de software te aportara demasiado a tu proyecto"
+>
+  <main class="px-4">
+    <SectionContainer
+      class="py-24 pb-32 flex flex-col lg:flex-row items-center lg:items-start gap-8"
+    >
+      <img
+        class="h-84 w-64 mb-5 mask-gradient-black-transparent"
+        src="https://raw.githubusercontent.com/Nefta11/my-portfolio/refs/heads/main/public/images/profile.png"
+        alt="Neftali foto"
+      />
+      <div>
+        <h1
+          class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex
+    flex-row gap-x-4 pb-6 lg:pb-10"
+        >
+          Hola, ¡Soy Neftali!<a
+            href="https://www.linkedin.com/in/neftali-arturo-hern%C3%A1ndez-vergara-9996a8229/"
+            target="_blank"
+            rel="noopener"
+            class="flex justify-center items-center text-center hover:scale-105 transition"
+          >
+            <Badge class="text-center">Preparado para aportar</Badge>
+          </a>
+        </h1>
+        <h2 class="text-white text-xl lg:text-2xl text-wrap max-w-[700px]">
+          <span class="text-white"
+            >Técnico Superior Universitario en Tecnologías de la Información
+            área Desarrollo de Software Multiplataforma.</span
+          >
+          <span class="text-yellow-200/90">Desarrollador Full Stack Jr.</span>
+          <span class="text-red-200/90">De Puebla, Mexico 🇲🇽.</span>
+          <span class="text-white opacity-85"
+            >Con más de 1 año de experiencia en desarrollo backend y
+            conocimientos en diseño y maquetación frontend.</span
+          >
+        </h2>
 
-  </SectionContainer>
+        <nav class="flex gap-4 mt-8 flex-wrap">
+          <SocialPill href="https://github.com/Nefta11">
+            <GitHubIcon class="size-4 md:size-6" />
+            <span class="text-white">GitHub</span>
+          </SocialPill>
+          <SocialPill
+            href="https://www.linkedin.com/in/neftali-arturo-hern%C3%A1ndez-vergara-9996a8229/"
+          >
+            <LinkeIndIcon class="size-4 md:size-6" />
+            <span class="text-white">LinkedIn</span>
+          </SocialPill>
+          <SocialPill href="mailto:neftaliarturoherandez@gmail.com">
+            <MailIcon class="size-4 lg:size-6" />
+            <span class="text-white">neftaliarturoherandez@gmail.com</span>
+          </SocialPill>
+        </nav>
+      </div>
+    </SectionContainer>
     <SectionContainer id="experiencia" class="mb-24">
-      <h2 class="text-white text-3xl font-semibold mb-6 flex gap-x-3 items-center">
-        <Briefcase class="size-7"/>
+      <h2
+        class="text-white text-3xl font-semibold mb-6 flex gap-x-3 items-center"
+      >
+        <Briefcase class="size-7" />
         Experiencia
       </h2>
-      <Experiences/>
+      <Experiences />
     </SectionContainer>
 
     <SectionContainer id="proyectos" class="mb-24">
-      <h2 class="text-white text-3xl font-semibold mb-6 flex gap-x-3 items-center">
-        <Code class="size-7"/>
+      <h2
+        class="text-white text-3xl font-semibold mb-6 flex gap-x-3 items-center"
+      >
+        <Code class="size-7" />
         Proyectos
       </h2>
-      <Projects/>
+      <Projects />
     </SectionContainer>
 
     <SectionContainer id="tecnologias">
-      <h2 class="text-white text-3xl font-semibold mb-6 flex gap-x-3 items-center">
-        <TecnologyIcon class="size-7"/>
+      <h2
+        class="text-white text-3xl font-semibold mb-6 flex gap-x-3 items-center"
+      >
+        <TecnologyIcon class="size-7" />
         Tecnologías
       </h2>
-      <Tecnology/>
+      <Tecnology />
     </SectionContainer>
 
     <SectionContainer id="sobre-mi">
-      <h2 class="text-white text-3xl font-semibold mb-6 flex gap-x-3 items-center">
-        <ProfileCheck class="size-7"/>
+      <h2
+        class="text-white text-3xl font-semibold mb-6 flex gap-x-3 items-center"
+      >
+        <ProfileCheck class="size-7" />
         Sobre Mi
       </h2>
-      <AboutMe/>
+      <AboutMe />
     </SectionContainer>
-</main>
+  </main>
 </Layout>
