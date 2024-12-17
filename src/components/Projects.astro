@@ -13,13 +13,13 @@ import LinkButton from "@/components/LinkButton.astro";
 import GitHubIcon from "@/components/Icons/GitHubIcon.astro";
 import LinkIcon from "@/components/Icons/LinkIcon.astro";
 import IconoDeCss from "./Icons/IconoDeCss.astro";
-import AstroIcon from "@/components/Icons/AstroIcon.astro"
-import TailwindCssIcon from "@/components/Icons/TailwindCssIcon.astro"
-import YarnIcon from "@/components/Icons/YarnIcon.astro"
-import NpmIcon from "@/components/Icons/NpmIcon.astro"
-import SvgIcon from "@/components/Icons/SvglIcon.astro"
-import VercelIcon from "@/components/Icons/VercelIcon.astro"
-
+import AstroIcon from "@/components/Icons/AstroIcon.astro";
+import TailwindCssIcon from "@/components/Icons/TailwindCssIcon.astro";
+import YarnIcon from "@/components/Icons/YarnIcon.astro";
+import NpmIcon from "@/components/Icons/NpmIcon.astro";
+import SvgIcon from "@/components/Icons/SvglIcon.astro";
+import VercelIcon from "@/components/Icons/VercelIcon.astro";
+import ReduxIcon from "@/components/Icons/ReduxIcon.astro";
 
 const TAGS = {
   Php: {
@@ -113,38 +113,68 @@ const TAGS = {
     class: "bg-gradient-to-r from-black/40 to-gray-800/40 text-white",
     icon: VercelIcon,
   },
+  Redux: {
+    name: "Redux",
+    class: "bg-gradient-to-r from-purple-400/40 to-purple-600/40 text-white",
+    icon: ReduxIcon,
+  },
 };
 
 const PROJECTS = [
   {
-    title: "Ultra Trail(Modulo Boletos)",
-    description:
-      "Desarrollo del módulo de métodos de pago y compra de boletos para la aplicación Ultra Trail, enfocada en carreras de montaña. Maqueté y desarrollé interfaces en React Native ejecutadas en Expo, creando pantallas para métodos de pago, compra de boletos, carrito de compras y visualización de boletos. Stripe fue implementado para la gestión segura de pagos. Node.js se utilizó para la configuración del entorno y ejecución del código JavaScript en React. Desarrollé y consumí APIs con Slim PHP para manejar transacciones y la gestión de boletos, utilizando MySQL para el almacenamiento de datos. Postman se utilizó para la prueba y documentación de las APIs creadas, asegurando su correcto funcionamiento y facilitando la integración del backend con el frontend.",
-    github: "https://github.com/UltraHuauchi?tab=repositories",
-    link:"",
+    title: "XicoNemi",
+    description: "",
+    github: "https://github.com/XicoNemi/mobile-app/tree/dev",
+    link: "",
     image:
       "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/UltraTrailBoletos.png",
     tags: [
       TAGS.Node,
       TAGS.react,
       TAGS.Mysql,
+      TAGS.Redux,
+      TAGS.Expo,
+      TAGS.Postman,
+      TAGS.Yarn,
+    ],
+  },
+  {
+    title: "Ultra Trail(Modulo Boletos)",
+    description:
+      "Desarrollo del módulo de métodos de pago y compra de boletos para la aplicación Ultra Trail, enfocada en carreras de montaña. Maqueté y desarrollé interfaces en React Native ejecutadas en Expo, creando pantallas para métodos de pago, compra de boletos, carrito de compras y visualización de boletos. Stripe fue implementado para la gestión segura de pagos. Node.js se utilizó para la configuración del entorno y ejecución del código JavaScript en React. Desarrollé y consumí APIs con Slim PHP para manejar transacciones y la gestión de boletos, utilizando MySQL para el almacenamiento de datos. Postman se utilizó para la prueba y documentación de las APIs creadas, asegurando su correcto funcionamiento y facilitando la integración del backend con el frontend.",
+    github: "https://github.com/UltraHuauchi?tab=repositories",
+    link: "",
+    image:
+      "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/UltraTrailBoletos.png",
+    tags: [
+      TAGS.react,
+      TAGS.Node,
+      TAGS.Mysql,
       TAGS.Stripe,
       TAGS.Expo,
       TAGS.Postman,
       TAGS.SlimPHP,
-      TAGS.Yarn
+      TAGS.Yarn,
     ],
   },
 
   {
-  title: "My Portafolio",
-  description:
-    "Desarrollé una página web estática utilizando Astro 4.0, basándome en un breve curso impartido por un desarrollador conocido. Para el diseño, empleé Tailwind CSS y un poco de JavaScript para algunas funcionalidades adicionales. Las capturas de pantalla fueron tomadas con la plataforma Shots y los iconos fueron extraídos de SVGL.app. El sitio web se desplegó en Vercel y es completamente responsivo. Aunque no es mi especialidad principal, el resultado es satisfactorio y la página se ve genial. En este proyecto, demuestro mis conocimientos, historial académico y experiencia.",
-  github: "https://github.com/Nefta11/my-portfolio",
-  link: "https://neftaliportafolio.vercel.app/",
-  image: "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/PortafolioNefta.png",
-  tags: [TAGS.JavaScript, TAGS.Astro, TAGS.TailwindCSS, TAGS.Npm, TAGS.Vercel, TAGS.Svg]
-},
+    title: "My Portafolio",
+    description:
+      "Desarrollé una página web estática utilizando Astro 4.0, basándome en un breve curso impartido por un desarrollador conocido. Para el diseño, empleé Tailwind CSS y un poco de JavaScript para algunas funcionalidades adicionales. Las capturas de pantalla fueron tomadas con la plataforma Shots y los iconos fueron extraídos de SVGL.app. El sitio web se desplegó en Vercel y es completamente responsivo. Aunque no es mi especialidad principal, el resultado es satisfactorio y la página se ve genial. En este proyecto, demuestro mis conocimientos, historial académico y experiencia.",
+    github: "https://github.com/Nefta11/my-portfolio",
+    link: "https://neftaliportafolio.vercel.app/",
+    image:
+      "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/PortafolioNefta.png",
+    tags: [
+      TAGS.JavaScript,
+      TAGS.Astro,
+      TAGS.TailwindCSS,
+      TAGS.Npm,
+      TAGS.Vercel,
+      TAGS.Svg,
+    ],
+  },
 
   {
     title: "App MusicForYou",
@@ -153,7 +183,14 @@ const PROJECTS = [
     github: "https://github.com/Nefta11/AppMusicForYou",
     image:
       "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/MusicForYou.png",
-    tags: [TAGS.Node, TAGS.react, TAGS.Mysql, TAGS.SlimPHP, TAGS.Postman, TAGS.Yarn],
+    tags: [
+      TAGS.Node,
+      TAGS.react,
+      TAGS.Mysql,
+      TAGS.SlimPHP,
+      TAGS.Postman,
+      TAGS.Yarn,
+    ],
   },
 
   {
