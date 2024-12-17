@@ -21,6 +21,7 @@ import SvgIcon from "@/components/Icons/SvglIcon.astro";
 import VercelIcon from "@/components/Icons/VercelIcon.astro";
 import ReduxIcon from "@/components/Icons/ReduxIcon.astro";
 import PrismaIcon from "@/components/Icons/PrismaIcon.astro";
+import JwtIcon from "@/components/Icons/JwtIcon.astro";
 
 const TAGS = {
   Php: {
@@ -30,7 +31,7 @@ const TAGS = {
     icon: PhpIcon,
   },
   Git : {
-    name: "Git",
+    name: "GitHub",
     class: "bg-gradient-to-r from-red-400/40 to-red-600/40 text-white",
     icon: GitHubIcon,
   },
@@ -129,6 +130,11 @@ const TAGS = {
     class: "bg-gradient-to-r from-gray-400/40 to-gray-600/40 text-white",
     icon: PrismaIcon,
   },
+  Jwt: {
+    name: "JWT",
+    class: "bg-gradient-to-r from-purple-400/40 to-purple-600/40 text-white",
+    icon: JwtIcon,
+  },
 };
 
 const PROJECTS = [
@@ -151,7 +157,8 @@ const PROJECTS = [
       TAGS.Yarn,
       TAGS.Prisma,
       TAGS.JavaScript,
-      TAGS.Git
+      TAGS.Git,
+      TAGS.Jwt,
     ],
   },
   {
