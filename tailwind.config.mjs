@@ -13,7 +13,7 @@ export default {
         function ({ addUtilities }) {
             addUtilities({
                 '.mask-gradient-black-transparent': {
-                    maskImage: 'linear-gradient(black 60%, transparent)',
+                    maskImage: 'linear-gradient(black 75%, transparent)',
                 },
             });
         },
