@@ -1,20 +1,10 @@
-# Astro Starter Kit: Basics
-   
-```sh    
-npm create astro@latest -- --template basics    
-```  
+# Portafolio de Neftali - Desarrollador Fullstack Jr.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Este es el portafolio personal de Neftali, un desarrollador fullstack junior con experiencia en desarrollo backend y conocimientos en diseño y maquetación frontend.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Estructura del Proyecto
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+Dentro de este proyecto Astro, encontrarás las siguientes carpetas y archivos:
 
 ```text
 /
@@ -22,7 +12,20 @@ Inside of your Astro project, you'll see the following folders and files:
 │   └── favicon.svg
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
+│   │   ├── AboutMe.astro
+│   │   ├── Badge.astro
+│   │   ├── Experiences.astro
+│   │   ├── Icons/
+│   │   │   ├── Briefcase.astro
+│   │   │   ├── Code.astro
+│   │   │   ├── GitHubIcon.astro
+│   │   │   ├── LinkeInd.astro
+│   │   │   ├── MailIcon.astro
+│   │   │   ├── ProfileCheck.astro
+│   │   │   └── TecnologyIcon.astro
+│   │   ├── Projects.astro
+│   │   ├── SectionContainer.astro
+│   │   └── SocialPill.astro
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
@@ -30,26 +33,39 @@ Inside of your Astro project, you'll see the following folders and files:
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Astro busca archivos `.astro` o `.md` en el directorio `src/pages/`. Cada página se expone como una ruta basada en su nombre de archivo.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## 🧞 Comandos
 
-Any static assets, like images, can be placed in the `public/` directory.
+Todos los comandos se ejecutan desde la raíz del proyecto, desde una terminal:
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
+| Comando                   | Acción                                           |
 | :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| `npm install`             | Instala las dependencias                         |
+| `npm run dev`             | Inicia el servidor de desarrollo local en `localhost:4321` |
+| `npm run build`           | Construye tu sitio de producción en `./dist/`    |
+| `npm run preview`         | Previsualiza tu construcción localmente, antes de desplegar |
+| `npm run astro ...`       | Ejecuta comandos CLI como `astro add`, `astro check` |
+| `npm run astro -- --help` | Obtén ayuda usando el CLI de Astro               |
 
-## 👀 Want to learn more?
+## 👀 ¿Quieres saber más?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-# my-portfolio
+Siéntete libre de consultar [nuestra documentación](https://docs.astro.build) o unirte a nuestro [servidor de Discord](https://astro.build/chat).
+
+## 📄 Descripción del Proyecto
+
+Este portafolio muestra la experiencia, proyectos y habilidades de Neftali en el desarrollo de software. Incluye secciones sobre su experiencia laboral, proyectos destacados, tecnologías que domina y una breve descripción sobre él.
+
+## 📂 Estructura de Componentes
+
+- **AboutMe.astro**: Componente que muestra información sobre Neftali.
+- **Badge.astro**: Componente para mostrar insignias.
+- **Experiences.astro**: Componente que lista la experiencia laboral.
+- **Icons/**: Directorio que contiene varios iconos utilizados en el portafolio.
+- **Projects.astro**: Componente que muestra los proyectos destacados.
+- **SectionContainer.astro**: Componente contenedor para secciones.
+- **SocialPill.astro**: Componente para enlaces a redes sociales.
+
+## 📧 Contacto
+
+Puedes contactar a Neftali a través de su [GitHub](https://github.com/Nefta11), [LinkedIn](https://www.linkedin.com/in/neftali-arturo-hern%C3%A1ndez-vergara-9996a8229/) o por correo electrónico a [neftaliarturoherandez@gmail.com](mailto:neftaliarturoherandez@gmail.com).
