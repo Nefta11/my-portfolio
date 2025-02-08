@@ -245,7 +245,14 @@ const PROJECTS = [
   }
 
   .project-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-15px);
+  }
+
+  .project-image {
+    width: 85%;
+    max-width: 500px; /* Ajustar el tamaño máximo de la imagen */
+    height: auto;
+    margin: 0 auto; /* Centrar la imagen */
   }
 </style>
 
@@ -272,14 +279,14 @@ const PROJECTS = [
           </ul>
 
           <img
-            class="rounded-xl shadow-2xl shadow-purple-900 mb-6 image-loading"
+            class="project-image rounded-xl shadow-2xl shadow-purple-900 mb-6 image-loading"
             src={image}
             alt={`Captura de pantalla del proyecto ${title}`}
             onload="this.classList.add('image-loaded')"
           />
           {image2 && (
             <img
-              class="rounded-xl shadow-2xl shadow-purple-900 mb-6 image-loading"
+              class="project-image rounded-xl shadow-2xl shadow-purple-900 mb-6 image-loading"
               src={image2}
               alt={`Captura de pantalla adicional del proyecto ${title}`}
               onload="this.classList.add('image-loaded')"
