@@ -1,5 +1,5 @@
 # Portafolio de Neftali - Desarrollador Fullstack Jr.
-
+ 
 Este es el portafolio personal de Neftali, un desarrollador fullstack junior con experiencia en desarrollo backend y conocimientos en diseño y maquetación frontend.
 
 ## 🚀 Estructura del Proyecto
