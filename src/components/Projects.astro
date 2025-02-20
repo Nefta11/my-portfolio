@@ -22,6 +22,8 @@ import VercelIcon from "@/components/Icons/VercelIcon.astro";
 import ReduxIcon from "@/components/Icons/ReduxIcon.astro";
 import PrismaIcon from "@/components/Icons/PrismaIcon.astro";
 import JwtIcon from "@/components/Icons/JwtIcon.astro";
+import ReacApp from "@/components/Icons/ReactApp.astro";
+import ViteIcon from "@/components/Icons/ViteIcon.astro";
 
 const TAGS = {
   Php: {
@@ -135,9 +137,37 @@ const TAGS = {
     class: "bg-gradient-to-r from-purple-400/40 to-purple-600/40 text-white",
     icon: JwtIcon,
   },
+  Vite:{
+    name: "Vite",
+    class: "bg-gradient-to-r from-blue-400/40 to-blue-600/40 text-white",
+    icon: ViteIcon,
+  },
+  ReacApp:{
+    name: "React",
+    class: "bg-gradient-to-r from-blue-400/40 to-blue-600/40 text-white",
+    icon: ReacApp,
+  }
 };
 
 const PROJECTS = [
+  {
+    title: "Pagina web Adventy Travels",
+    description:
+      "Desarrollé una plataforma web orientada a la promoción y comercialización de servicios turísticos. Utilicé React junto con Vite como herramienta de bundling, siguiendo una arquitectura modular centrada en funcionalidades para optimizar la escalabilidad y el mantenimiento a largo plazo. Implementé EmailJS para la gestión de correos electrónicos, permitiendo que los asesores de ventas se comuniquen de manera eficiente con los usuarios interesados en solicitar cotizaciones personalizadas. El sitio es multilingüe, soportando español, inglés y francés, gracias a la integración de i18next para la internacionalización. Además, se incorporaron bibliotecas como React Icons y SweetAlert para mejorar la interfaz y la experiencia del usuario. El diseño es completamente responsivo, adaptándose de manera fluida a una variedad de dispositivos móviles y plataformas. También se establece una conexión con una tienda en línea para la adquisición de paquetes turísticos. Aunque el proyecto sigue en desarrollo, se planea la incorporación de nuevas funcionalidades y secciones para enriquecer la oferta de servicios.",
+    github: "https://github.com/Nefta11/GoodTravel-web",
+    link: "https://adventytravels.vercel.app/",
+    image:
+      "https://raw.githubusercontent.com/Nefta11/my-portfolio/refs/heads/main/public/images/projects/AdventyTravels.png",
+    tags: [
+      TAGS.Html,
+      TAGS.css,
+      TAGS.JavaScript,
+      TAGS.Vercel,
+      TAGS.Vite,
+      TAGS.ReacApp,
+    ],
+
+  },
   {
     title: "App móvil XicoNemi",
     description:
