@@ -24,6 +24,7 @@ import PrismaIcon from "@/components/Icons/PrismaIcon.astro";
 import JwtIcon from "@/components/Icons/JwtIcon.astro";
 import ReacApp from "@/components/Icons/ReactApp.astro";
 import ViteIcon from "@/components/Icons/ViteIcon.astro";
+import { Image } from "astro:assets";
 
 const TAGS = {
   Php: {
@@ -32,7 +33,7 @@ const TAGS = {
       "bg-gradient-to-r from-indigo-400/40 via-purple-500/40 to-indigo-700/40 text-white",
     icon: PhpIcon,
   },
-  Git : {
+  Git: {
     name: "GitHub",
     class: "bg-gradient-to-r from-red-400/40 to-red-600/40 text-white",
     icon: GitHubIcon,
@@ -137,16 +138,16 @@ const TAGS = {
     class: "bg-gradient-to-r from-purple-400/40 to-purple-600/40 text-white",
     icon: JwtIcon,
   },
-  Vite:{
+  Vite: {
     name: "Vite",
     class: "bg-gradient-to-r from-blue-400/40 to-blue-600/40 text-white",
     icon: ViteIcon,
   },
-  ReacApp:{
+  ReacApp: {
     name: "React",
     class: "bg-gradient-to-r from-blue-400/40 to-blue-600/40 text-white",
     icon: ReacApp,
-  }
+  },
 };
 
 const PROJECTS = [
@@ -158,6 +159,8 @@ const PROJECTS = [
     link: "https://adventytravels.vercel.app/",
     image:
       "https://raw.githubusercontent.com/Nefta11/my-portfolio/refs/heads/main/public/images/projects/adventy1.png",
+    image2:
+      "https://raw.githubusercontent.com/Nefta11/my-portfolio/refs/heads/main/public/images/projects/adventy.png",
     tags: [
       TAGS.Html,
       TAGS.css,
@@ -165,10 +168,9 @@ const PROJECTS = [
       TAGS.Vercel,
       TAGS.Vite,
       TAGS.ReacApp,
-      TAGS.Svg,
+      TAGS.Npm,
       TAGS.Git,
     ],
-
   },
   {
     title: "App móvil XicoNemi",
@@ -178,7 +180,8 @@ const PROJECTS = [
     link: "",
     image:
       "https://raw.githubusercontent.com/Nefta11/my-portfolio/refs/heads/main/public/images/projects/XicoNemi1.png",
-      image2:"https://raw.githubusercontent.com/Nefta11/my-portfolio/refs/heads/main/public/images/projects/XicoNemi2.png",
+    image2:
+      "https://raw.githubusercontent.com/Nefta11/my-portfolio/refs/heads/main/public/images/projects/XicoNemi2.png",
     tags: [
       TAGS.Node,
       TAGS.react,
@@ -211,7 +214,7 @@ const PROJECTS = [
       TAGS.SlimPHP,
       TAGS.Yarn,
       TAGS.JavaScript,
-      TAGS.Git
+      TAGS.Git,
     ],
   },
 
